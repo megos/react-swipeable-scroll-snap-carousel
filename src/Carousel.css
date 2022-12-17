@@ -1,0 +1,15 @@
+.carousel {
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  user-select: none;
+  display: flex;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  scroll-snap-align: center;
+}
