@@ -68,3 +68,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.buttons {
+  display: flex;
+  place-content: center;
+  margin: 8px;
+  gap: 8px;
+}

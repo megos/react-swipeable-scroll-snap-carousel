@@ -1,21 +1,40 @@
-import { useCallback, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import './Carousel.css'
 
-export const Carousel: React.FC = () => {
+export const Carousel: React.FC<{
+  index: number
+  onChangeIndex: (index: number) => void
+}> = ({ index, onChangeIndex }) => {
   const carouselRef = useRef<HTMLDivElement>(null)
   const baseX = useRef<number | null>(null)
+  const skip = useRef(false)
 
   const width = 500
+
+  useEffect(() => {
+    if (!carouselRef.current) return
+    if (carouselRef.current.scrollLeft === index * width) return
+    carouselRef.current.scrollTo({
+      left: index * width,
+      behavior: 'smooth',
+    })
+    skip.current = true
+  }, [index])
 
   const handleScroll = useCallback(
     (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
       const x = e.currentTarget.scrollLeft
+      if (skip.current) {
+        if (x / width === index) skip.current = false
+        return
+      }
       if (x % width === 0 && carouselRef.current) {
         carouselRef.current.style.scrollSnapType = 'x mandatory'
         carouselRef.current.style.scrollBehavior = 'smooth'
+        onChangeIndex(x / width)
       }
     },
-    [],
+    [index, onChangeIndex],
   )
 
   const handleMouseDown = useCallback(
