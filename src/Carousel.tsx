@@ -29,8 +29,7 @@ export const Carousel: React.FC<{
         return
       }
       if (x % width === 0 && carouselRef.current) {
-        carouselRef.current.style.scrollSnapType = 'x mandatory'
-        carouselRef.current.style.scrollBehavior = 'smooth'
+        carouselRef.current.classList.remove('scrolling')
         onChangeIndex(x / width)
       }
     },
@@ -40,8 +39,7 @@ export const Carousel: React.FC<{
   const handleMouseDown = useCallback(
     (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       if (!carouselRef.current) return
-      carouselRef.current.style.scrollSnapType = 'none'
-      carouselRef.current.style.scrollBehavior = 'auto'
+      carouselRef.current.classList.add('scrolling')
       baseX.current = carouselRef.current.scrollLeft + e.pageX
     },
     [],

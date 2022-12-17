@@ -9,6 +9,10 @@
 .carousel::-webkit-scrollbar {
   display: none;
 }
+.carousel.scrolling {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
 
 .carousel-item {
   scroll-snap-align: center;
