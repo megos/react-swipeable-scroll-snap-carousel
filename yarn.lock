@@ -954,6 +954,11 @@ update-browserslist-db@^1.0.9:
     escalade "^3.1.1"
     picocolors "^1.0.0"
 
+vite-plugin-css-injected-by-js@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-css-injected-by-js/-/vite-plugin-css-injected-by-js-2.1.1.tgz#a79275241c61f1c8d55d228f5b2dded450a580e4"
+  integrity sha512-gjIG6iFWde32oRr/bK9CsfN+jdbura2y4GlDzeOiEm6py38ud8dXzFl9zwmHjOjZdr8XEgQ9TovzVGNzp47esw==
+
 vite@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/vite/-/vite-4.0.1.tgz#e0a54d818c28ae47fd27bcac6a4a952c6a658502"

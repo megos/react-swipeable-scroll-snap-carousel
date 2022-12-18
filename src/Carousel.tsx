@@ -1,4 +1,4 @@
-import { PropsWithChildren, useCallback, useEffect, useRef } from 'react'
+import React, { PropsWithChildren, useCallback, useEffect, useRef } from 'react'
 import { container } from './Carousel.css'
 
 export const Carousel: React.FC<PropsWithChildren & {
