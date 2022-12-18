@@ -37,6 +37,7 @@ export const Carousel: React.FC<PropsWithChildren & {
   const handleMouseDown = useCallback(
     (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       if (!carouselRef.current) return
+      skip.current = false
       carouselRef.current.classList.add('scrolling')
       baseX.current = carouselRef.current.scrollLeft + e.pageX
     },
