@@ -1,10 +1,10 @@
-import { useCallback, useEffect, useRef } from 'react'
+import { PropsWithChildren, useCallback, useEffect, useRef } from 'react'
 import './Carousel.css'
 
-export const Carousel: React.FC<{
+export const Carousel: React.FC<PropsWithChildren & {
   index: number
   onChangeIndex: (index: number) => void
-}> = ({ index, onChangeIndex }) => {
+}> = ({ index, onChangeIndex, children }) => {
   const carouselRef = useRef<HTMLDivElement>(null)
   const baseX = useRef<number | null>(null)
   const skip = useRef(false)
@@ -77,15 +77,7 @@ export const Carousel: React.FC<{
       onMouseUp={handleEnd}
       onMouseLeave={handleEnd}
     >
-      <div style={{ backgroundColor: 'pink' }}>
-        1
-      </div>
-      <div style={{ backgroundColor: 'skyblue' }}>
-        2
-      </div>
-      <div style={{ backgroundColor: 'limegreen' }}>
-        3
-      </div>
+      {children}
     </div>
   )
 }
