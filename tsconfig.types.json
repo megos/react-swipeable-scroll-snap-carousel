@@ -1,0 +1,10 @@
+{
+  "include": ["src/Carousel.tsx"],
+  "compilerOptions": {
+    "declaration": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+  },
+  "extends": "./tsconfig.json"
+}
