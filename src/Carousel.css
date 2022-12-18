@@ -1,10 +1,12 @@
 .carousel {
   scroll-snap-type: x mandatory;
-  white-space: nowrap;
-  overflow-x: auto;
   scroll-behavior: smooth;
   user-select: none;
   display: flex;
+  overflow-x: auto;
+  width: 100%;
+  height: 100%;
+  flex-flow: row nowrap;
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -13,7 +15,9 @@
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
-
-.carousel-item {
+.carousel > * {
   scroll-snap-align: center;
+  width: 100%;
+  height: 100%;
+  flex: none;
 }

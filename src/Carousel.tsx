@@ -9,10 +9,9 @@ export const Carousel: React.FC<{
   const baseX = useRef<number | null>(null)
   const skip = useRef(false)
 
-  const width = 500
-
   useEffect(() => {
     if (!carouselRef.current) return
+    const width = carouselRef.current.offsetWidth
     if (carouselRef.current.scrollLeft === index * width) return
     carouselRef.current.scrollTo({
       left: index * width,
@@ -23,6 +22,8 @@ export const Carousel: React.FC<{
 
   const handleScroll = useCallback(
     (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
+      if (!carouselRef.current) return
+      const width = carouselRef.current.offsetWidth
       const x = e.currentTarget.scrollLeft
       if (skip.current) {
         if (x / width === index) skip.current = false
@@ -55,6 +56,7 @@ export const Carousel: React.FC<{
 
   const handleEnd = useCallback(() => {
     if (!(carouselRef.current && baseX.current)) return
+    const width = carouselRef.current.offsetWidth
     const index = Math.trunc(
       (carouselRef.current.scrollLeft + width / 2) / width,
     )
@@ -68,7 +70,6 @@ export const Carousel: React.FC<{
   return (
     <div
       className="carousel"
-      style={{ width }}
       ref={carouselRef}
       onScroll={handleScroll}
       onMouseDown={handleMouseDown}
@@ -76,16 +77,14 @@ export const Carousel: React.FC<{
       onMouseUp={handleEnd}
       onMouseLeave={handleEnd}
     >
-      <div className="carousel-item">
-        <div style={{ backgroundColor: 'pink', width, height: 500 }}>1</div>
+      <div style={{ backgroundColor: 'pink' }}>
+        1
       </div>
-      <div className="carousel-item">
-        <div style={{ backgroundColor: 'skyblue', width, height: 500 }}>2</div>
+      <div style={{ backgroundColor: 'skyblue' }}>
+        2
       </div>
-      <div className="carousel-item">
-        <div style={{ backgroundColor: 'limegreen', width, height: 500 }}>
-          3
-        </div>
+      <div style={{ backgroundColor: 'limegreen' }}>
+        3
       </div>
     </div>
   )

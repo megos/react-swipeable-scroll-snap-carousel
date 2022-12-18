@@ -69,6 +69,11 @@ button:focus-visible {
   }
 }
 
+.wrapper {
+  width: 500px;
+  height: 500px;
+}
+
 .buttons {
   display: flex;
   place-content: center;
