@@ -1,5 +1,5 @@
 import { PropsWithChildren, useCallback, useEffect, useRef } from 'react'
-import './Carousel.css'
+import { container } from './Carousel.css'
 
 export const Carousel: React.FC<PropsWithChildren & {
   index: number
@@ -69,7 +69,7 @@ export const Carousel: React.FC<PropsWithChildren & {
 
   return (
     <div
-      className="carousel"
+      className={container}
       ref={carouselRef}
       onScroll={handleScroll}
       onMouseDown={handleMouseDown}
