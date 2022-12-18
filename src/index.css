@@ -70,8 +70,10 @@ button:focus-visible {
 }
 
 .wrapper {
-  width: 500px;
-  height: 500px;
+  width: 256px;
+  height: 256px;
+  font-size: 128px;
+  line-height: 1;
 }
 
 .buttons {
