@@ -13,10 +13,7 @@ export const Carousel: React.FC<PropsWithChildren & {
     if (!carouselRef.current) return
     const width = carouselRef.current.offsetWidth
     if (carouselRef.current.scrollLeft === index * width) return
-    carouselRef.current.scrollTo({
-      left: index * width,
-      behavior: 'smooth',
-    })
+    carouselRef.current.scrollLeft = index * width
     skip.current = true
   }, [index])
 
