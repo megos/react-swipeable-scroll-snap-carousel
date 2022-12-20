@@ -14,7 +14,7 @@ export default defineConfig({
   build: {
     cssCodeSplit: false,
     lib: {
-      entry: 'src/Carousel.tsx',
+      entry: 'src/index.ts',
       name: 'Carousel',
       fileName: 'index',
       formats: ['es'],

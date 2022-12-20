@@ -1,5 +1,5 @@
 {
-  "include": ["src/Carousel.tsx"],
+  "include": ["src/index.ts"],
   "compilerOptions": {
     "declaration": true,
     "noEmit": false,
