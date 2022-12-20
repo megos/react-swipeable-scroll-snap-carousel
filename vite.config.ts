@@ -12,7 +12,6 @@ export default defineConfig({
     cssInjectedByJsPlugin(),
   ],
   build: {
-    cssCodeSplit: false,
     lib: {
       entry: 'src/index.ts',
       name: 'Carousel',
