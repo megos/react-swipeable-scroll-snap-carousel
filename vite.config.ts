@@ -17,7 +17,6 @@ export default defineConfig({
       entry: 'src/index.ts',
       name: 'Carousel',
       fileName: 'index',
-      formats: ['es'],
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
