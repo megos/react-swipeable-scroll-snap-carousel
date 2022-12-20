@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Carousel } from './Carousel'
+import { Carousel } from '../src'
 
 const items = (
   <>
