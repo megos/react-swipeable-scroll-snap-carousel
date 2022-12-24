@@ -12,12 +12,11 @@ export const container = style({
   '::-webkit-scrollbar': {
     display: 'none',
   },
-  selectors: {
-    '&.scrolling': {
-      scrollSnapType: 'none',
-      scrollBehavior: 'auto'
-    },
-  }
+})
+
+export const scrolling = style({
+  scrollSnapType: 'none',
+  scrollBehavior: 'auto'
 })
 
 globalStyle(

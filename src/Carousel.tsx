@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, useCallback, useEffect, useRef } from 'react'
-import { container } from './Carousel.css'
+import { container, scrolling } from './Carousel.css'
 
 export const Carousel: React.FC<PropsWithChildren & {
   index: number
@@ -27,7 +27,7 @@ export const Carousel: React.FC<PropsWithChildren & {
         return
       }
       if (x % width === 0 && carouselRef.current) {
-        carouselRef.current.classList.remove('scrolling')
+        carouselRef.current.classList.remove(scrolling)
         onChangeIndex(x / width)
       }
     },
@@ -38,7 +38,7 @@ export const Carousel: React.FC<PropsWithChildren & {
     (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       if (!carouselRef.current) return
       skip.current = false
-      carouselRef.current.classList.add('scrolling')
+      carouselRef.current.classList.add(scrolling)
       baseX.current = carouselRef.current.scrollLeft + e.pageX
     },
     [],
