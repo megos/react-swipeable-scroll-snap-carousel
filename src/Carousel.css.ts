@@ -4,6 +4,7 @@ export const container = style({
   scrollSnapType: 'x mandatory',
   scrollBehavior: 'smooth',
   userSelect: 'none',
+  WebkitUserSelect: 'none',
   display: 'flex',
   overflowX: 'auto',
   width: '100%',
