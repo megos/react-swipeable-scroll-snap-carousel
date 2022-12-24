@@ -57,6 +57,8 @@ export const Carousel: React.FC<CarouselProps> = ({
     (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       if (!(carouselRef.current && baseX.current)) return
       carouselRef.current.scrollLeft = baseX.current - e.pageX
+      // Avoid overflow scrolling Safari
+      e.preventDefault()
     },
     [],
   )
