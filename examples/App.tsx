@@ -20,16 +20,24 @@ function App() {
         </Carousel>
       </div>
       <div className="buttons center">
-        <button onClick={() => setIndex(prev => prev - 1)} disabled={index === 0}>&lt;</button>
+        <button
+          onClick={() => setIndex((prev) => prev - 1)}
+          disabled={index === 0}
+        >
+          &lt;
+        </button>
         <button onClick={() => setIndex(0)}>1</button>
         <button onClick={() => setIndex(1)}>2</button>
         <button onClick={() => setIndex(2)}>3</button>
         <button onClick={() => setIndex(3)}>4</button>
-        <button onClick={() => setIndex(prev => prev + 1)} disabled={index === 3}>&gt;</button>
+        <button
+          onClick={() => setIndex((prev) => prev + 1)}
+          disabled={index === 3}
+        >
+          &gt;
+        </button>
       </div>
-      <div className="center">
-        currentIndex: {index + 1}
-      </div>
+      <div className="center">currentIndex: {index + 1}</div>
     </div>
   )
 }

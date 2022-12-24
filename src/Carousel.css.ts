@@ -17,14 +17,12 @@ export const container = style({
 
 export const scrolling = style({
   scrollSnapType: 'none',
-  scrollBehavior: 'auto'
+  scrollBehavior: 'auto',
 })
 
-globalStyle(
-  `${container} > *`, {
-    scrollSnapAlign: 'center',
-    width: '100%',
-    height: '100%',
-    flex: 'none'
-  }
-)
+globalStyle(`${container} > *`, {
+  scrollSnapAlign: 'center',
+  width: '100%',
+  height: '100%',
+  flex: 'none',
+})

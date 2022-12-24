@@ -14,8 +14,8 @@
     "dev": "vite",
     "build": "vite build && tsc -p tsconfig.types.json",
     "preview": "vite preview",
-    "lint": "rome check src",
-    "format": "rome format src --write",
+    "lint": "rome check src examples",
+    "format": "rome format src examples --write",
     "build:page": "vite -c vite.config.page.ts build"
   },
   "devDependencies": {
