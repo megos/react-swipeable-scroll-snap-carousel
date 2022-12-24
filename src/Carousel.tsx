@@ -2,9 +2,9 @@ import React, { PropsWithChildren, useCallback, useEffect, useRef } from 'react'
 import { container, scrolling } from './Carousel.css'
 
 export const Carousel: React.FC<PropsWithChildren & {
-  index: number
-  onChangeIndex: (index: number) => void
-}> = ({ index, onChangeIndex, children }) => {
+  value: number
+  onChange: (index: number) => void
+}> = ({ value, onChange, children }) => {
   const carouselRef = useRef<HTMLDivElement>(null)
   const baseX = useRef<number | null>(null)
   const skip = useRef(false)
@@ -12,10 +12,10 @@ export const Carousel: React.FC<PropsWithChildren & {
   useEffect(() => {
     if (!carouselRef.current) return
     const width = carouselRef.current.offsetWidth
-    if (carouselRef.current.scrollLeft === index * width) return
-    carouselRef.current.scrollLeft = index * width
+    if (carouselRef.current.scrollLeft === value * width) return
+    carouselRef.current.scrollLeft = value * width
     skip.current = true
-  }, [index])
+  }, [value])
 
   const handleScroll = useCallback(
     (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
@@ -23,15 +23,15 @@ export const Carousel: React.FC<PropsWithChildren & {
       const width = carouselRef.current.offsetWidth
       const x = e.currentTarget.scrollLeft
       if (skip.current) {
-        if (x / width === index) skip.current = false
+        if (x / width === value) skip.current = false
         return
       }
       if (x % width === 0) {
         carouselRef.current.classList.remove(scrolling)
-        onChangeIndex(x / width)
+        onChange(x / width)
       }
     },
-    [index, onChangeIndex],
+    [value, onChange],
   )
 
   const handleMouseDown = useCallback(

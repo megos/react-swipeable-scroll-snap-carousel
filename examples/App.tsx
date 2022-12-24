@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <div className="wrapper">
-        <Carousel index={index} onChangeIndex={setIndex}>
+        <Carousel value={index} onChange={setIndex}>
           {items}
         </Carousel>
       </div>
