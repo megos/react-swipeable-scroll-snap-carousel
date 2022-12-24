@@ -15,25 +15,23 @@ export const Carousel: React.FC<CarouselProps> = ({
 }) => {
   const carouselRef = useRef<HTMLDivElement>(null)
   const baseX = useRef<number | null>(null)
-  const skip = useRef(false)
+  const skipHandleScroll = useRef(false)
 
   useEffect(() => {
     if (!carouselRef.current) return
     const width = carouselRef.current.offsetWidth
-    if (carouselRef.current.scrollLeft === value * width) return
-    carouselRef.current.scrollLeft = value * width
-    skip.current = true
+    const nextScrollLeft = value * width
+    if (carouselRef.current.scrollLeft === nextScrollLeft) return
+    carouselRef.current.scrollLeft = nextScrollLeft
+    skipHandleScroll.current = true
   }, [value])
 
   const handleScroll = useCallback(
     (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
+      if (skipHandleScroll.current) return
       if (!carouselRef.current) return
       const width = carouselRef.current.offsetWidth
       const x = e.currentTarget.scrollLeft
-      if (skip.current) {
-        if (x / width === value) skip.current = false
-        return
-      }
       if (x % width === 0) {
         carouselRef.current.classList.remove(scrolling)
         onChange(x / width)
@@ -42,10 +40,13 @@ export const Carousel: React.FC<CarouselProps> = ({
     [value, onChange],
   )
 
+  const handlePointerDown = useCallback(() => {
+    skipHandleScroll.current = false
+  }, [])
+
   const handleMouseDown = useCallback(
     (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       if (!carouselRef.current) return
-      skip.current = false
       carouselRef.current.classList.add(scrolling)
       baseX.current = carouselRef.current.scrollLeft + e.pageX
     },
@@ -78,6 +79,7 @@ export const Carousel: React.FC<CarouselProps> = ({
       className={`${container} ${className}`}
       ref={carouselRef}
       onScroll={handleScroll}
+      onPointerDown={handlePointerDown}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleEnd}
