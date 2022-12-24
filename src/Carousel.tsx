@@ -14,8 +14,8 @@ export const Carousel: React.FC<CarouselProps> = ({
   children,
 }) => {
   const carouselRef = useRef<HTMLDivElement>(null)
-  const baseX = useRef<number | null>(null)
-  const skipHandleScroll = useRef(false)
+  const baseXRef = useRef<number | null>(null)
+  const skipHandleScrollRef = useRef(false)
 
   useEffect(() => {
     if (!carouselRef.current) return
@@ -23,12 +23,12 @@ export const Carousel: React.FC<CarouselProps> = ({
     const nextScrollLeft = value * width
     if (carouselRef.current.scrollLeft === nextScrollLeft) return
     carouselRef.current.scrollLeft = nextScrollLeft
-    skipHandleScroll.current = true
+    skipHandleScrollRef.current = true
   }, [value])
 
   const handleScroll = useCallback(
     (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
-      if (skipHandleScroll.current) return
+      if (skipHandleScrollRef.current) return
       if (!carouselRef.current) return
       const width = carouselRef.current.offsetWidth
       const x = e.currentTarget.scrollLeft
@@ -41,22 +41,22 @@ export const Carousel: React.FC<CarouselProps> = ({
   )
 
   const handlePointerDown = useCallback(() => {
-    skipHandleScroll.current = false
+    skipHandleScrollRef.current = false
   }, [])
 
   const handleMouseDown = useCallback(
     (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       if (!carouselRef.current) return
       carouselRef.current.classList.add(scrolling)
-      baseX.current = carouselRef.current.scrollLeft + e.pageX
+      baseXRef.current = carouselRef.current.scrollLeft + e.pageX
     },
     [],
   )
 
   const handleMouseMove = useCallback(
     (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-      if (!(carouselRef.current && baseX.current)) return
-      carouselRef.current.scrollLeft = baseX.current - e.pageX
+      if (!(carouselRef.current && baseXRef.current)) return
+      carouselRef.current.scrollLeft = baseXRef.current - e.pageX
       // Avoid overflow scrolling Safari
       e.preventDefault()
     },
@@ -64,7 +64,7 @@ export const Carousel: React.FC<CarouselProps> = ({
   )
 
   const handleEnd = useCallback(() => {
-    if (!(carouselRef.current && baseX.current)) return
+    if (!(carouselRef.current && baseXRef.current)) return
     const width = carouselRef.current.offsetWidth
     const index = Math.trunc(
       (carouselRef.current.scrollLeft + width / 2) / width,
@@ -77,7 +77,7 @@ export const Carousel: React.FC<CarouselProps> = ({
       left: nextScrollLeft,
       behavior: 'smooth',
     })
-    baseX.current = null
+    baseXRef.current = null
   }, [])
 
   return (
