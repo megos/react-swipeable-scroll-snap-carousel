@@ -1,0 +1,10 @@
+name: lint
+on:
+  - pull_request
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: rome/setup-rome@v0.4
+    - uses: actions/checkout@v3
+    - run: rome ci src examples
