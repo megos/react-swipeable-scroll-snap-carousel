@@ -1,10 +1,18 @@
 import React, { PropsWithChildren, useCallback, useEffect, useRef } from 'react'
 import { container, scrolling } from './Carousel.css'
 
-export const Carousel: React.FC<PropsWithChildren & {
+export type CarouselProps = PropsWithChildren & {
   value: number
   onChange: (index: number) => void
-}> = ({ value, onChange, children }) => {
+  className?: string
+}
+
+export const Carousel: React.FC<CarouselProps> = ({
+  value,
+  onChange,
+  className = '',
+  children,
+}) => {
   const carouselRef = useRef<HTMLDivElement>(null)
   const baseX = useRef<number | null>(null)
   const skip = useRef(false)
@@ -67,7 +75,7 @@ export const Carousel: React.FC<PropsWithChildren & {
 
   return (
     <div
-      className={container}
+      className={`${container} ${className}`}
       ref={carouselRef}
       onScroll={handleScroll}
       onMouseDown={handleMouseDown}
