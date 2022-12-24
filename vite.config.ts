@@ -11,6 +11,7 @@ export default defineConfig({
     vanillaExtractPlugin(),
     cssInjectedByJsPlugin(),
   ],
+  publicDir: false,
   build: {
     lib: {
       entry: 'src/index.ts',

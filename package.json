@@ -14,7 +14,8 @@
     "build": "vite build && tsc -p tsconfig.types.json",
     "preview": "vite preview",
     "lint": "rome check src",
-    "format": "rome format src --write"
+    "format": "rome format src --write",
+    "build:page": "vite -c vite.config.page.ts build"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
