@@ -26,7 +26,7 @@ export const Carousel: React.FC<PropsWithChildren & {
         if (x / width === index) skip.current = false
         return
       }
-      if (x % width === 0 && carouselRef.current) {
+      if (x % width === 0) {
         carouselRef.current.classList.remove(scrolling)
         onChangeIndex(x / width)
       }
