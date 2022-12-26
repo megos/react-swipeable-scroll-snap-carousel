@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -11,7 +10,14 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('visible', (title: number) => {
+  ;[...new Array(4)].forEach((_, index) => {
+    const currentTitle = index + 1
+    cy.contains('div', currentTitle).should(
+      title === currentTitle ? 'be.visible' : 'not.contain',
+    )
+  })
+})
 //
 //
 // -- This is a child command --
@@ -25,13 +31,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 //
-// declare global {
-//   namespace Cypress {
-//     interface Chainable {
-//       login(email: string, password: string): Chainable<void>
-//       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-//       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-//       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
-//     }
-//   }
-// }
+declare namespace Cypress {
+  interface Chainable {
+    visible(title: number): void
+  }
+}
