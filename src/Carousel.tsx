@@ -66,11 +66,10 @@ export const Carousel: React.FC<CarouselProps> = ({
   const handleEnd = useCallback(() => {
     if (!(carouselRef.current && baseXRef.current)) return
     const width = carouselRef.current.offsetWidth
-    const index = Math.trunc(
-      (carouselRef.current.scrollLeft + width / 2) / width,
-    )
+    const x = carouselRef.current.scrollLeft
+    const index = Math.trunc((x + width / 2) / width)
     const nextScrollLeft = index * width
-    if (carouselRef.current.scrollLeft === nextScrollLeft) {
+    if (x === nextScrollLeft) {
       carouselRef.current.classList.remove(scrolling)
     }
     carouselRef.current.scrollTo({
