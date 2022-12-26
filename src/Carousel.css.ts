@@ -10,6 +10,7 @@ export const container = style({
   width: '100%',
   height: '100%',
   flexFlow: 'row nowrap',
+  scrollbarWidth: 'none',
   '::-webkit-scrollbar': {
     display: 'none',
   },
