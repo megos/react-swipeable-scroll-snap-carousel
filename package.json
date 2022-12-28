@@ -3,6 +3,11 @@
   "description": "A tiny swipeable carousel built with scroll snap for React",
   "version": "0.0.1",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/megos/react-swipeable-scroll-snap-carousel.git"
+  },
+  "homepage": "https://megos.github.io/react-swipeable-scroll-snap-carousel/",
   "files": [
     "dist"
   ],
