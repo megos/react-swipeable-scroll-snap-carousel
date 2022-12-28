@@ -1,38 +1,22 @@
-// ***********************************************
-// This example commands.ts shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
 Cypress.Commands.add('visible', (title: number) => {
-  ;[...new Array(4)].forEach((_, index) => {
-    const currentTitle = index + 1
-    cy.contains('div', currentTitle).should(
-      title === currentTitle ? 'be.visible' : 'not.contain',
-    )
-  })
+  const width = 484 // 500px - 8px * 2 (body margin)
+  cy.get('div[class^=Carousel_container__]').should(
+    'have.prop',
+    'scrollLeft',
+    (title - 1) * width,
+  )
 })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-//
-declare namespace Cypress {
-  interface Chainable {
-    visible(title: number): void
-  }
-}
+
+Cypress.Commands.add(
+  'swipe',
+  { prevSubject: 'element' },
+  (subject: Element, from: number, to: number) => {
+    const y = 10
+    cy.wrap(subject)
+      .trigger('mousedown', { button: 1, x: from, y, force: true })
+      .trigger('mousemove', { button: 1, x: to, y, force: true })
+      .trigger('mouseup', { force: true })
+  },
+)
+
+export {}
