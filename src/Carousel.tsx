@@ -2,14 +2,14 @@ import React, { PropsWithChildren, useCallback, useEffect, useRef } from 'react'
 import { container, scrolling } from './Carousel.css'
 
 export type CarouselProps = PropsWithChildren & {
-  value: number
-  onChange: (index: number) => void
+  index: number
+  onChangeIndex: (index: number) => void
   className?: string
 }
 
 export const Carousel: React.FC<CarouselProps> = ({
-  value,
-  onChange,
+  index,
+  onChangeIndex,
   className = '',
   children,
 }) => {
@@ -20,11 +20,11 @@ export const Carousel: React.FC<CarouselProps> = ({
   useEffect(() => {
     if (!carouselRef.current) return
     const width = carouselRef.current.offsetWidth
-    const nextScrollLeft = value * width
+    const nextScrollLeft = index * width
     if (carouselRef.current.scrollLeft === nextScrollLeft) return
     carouselRef.current.scrollLeft = nextScrollLeft
     skipHandleScrollRef.current = true
-  }, [value])
+  }, [index])
 
   const handleScroll = useCallback(
     (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
@@ -34,10 +34,10 @@ export const Carousel: React.FC<CarouselProps> = ({
       const x = e.currentTarget.scrollLeft
       if (x % width === 0) {
         carouselRef.current.classList.remove(scrolling)
-        onChange(x / width)
+        onChangeIndex(x / width)
       }
     },
-    [value, onChange],
+    [index, onChangeIndex],
   )
 
   const handlePointerDown = useCallback(() => {
