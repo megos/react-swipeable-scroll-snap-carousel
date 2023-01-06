@@ -13,17 +13,22 @@ export const Carousel: React.FC<CarouselProps> = ({
   className = '',
   children,
 }) => {
+  const isFirstScrollRef = useRef(true)
   const carouselRef = useRef<HTMLDivElement>(null)
   const baseXRef = useRef<number | null>(null)
   const skipHandleScrollRef = useRef(false)
 
   useEffect(() => {
     if (!carouselRef.current) return
+    const isFirstScroll = isFirstScrollRef.current
+    isFirstScrollRef.current = false
     const width = carouselRef.current.offsetWidth
     const nextScrollLeft = index * width
     if (carouselRef.current.scrollLeft === nextScrollLeft) return
+    isFirstScroll
+      ? carouselRef.current.classList.add(scrolling)
+      : (skipHandleScrollRef.current = true)
     carouselRef.current.scrollLeft = nextScrollLeft
-    skipHandleScrollRef.current = true
   }, [index])
 
   const handleScroll = useCallback(
