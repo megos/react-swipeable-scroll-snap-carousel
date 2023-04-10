@@ -1,7 +1,7 @@
 {
   "name": "react-swipeable-scroll-snap-carousel",
   "description": "A tiny swipeable carousel built with scroll snap for React",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "repository": {
     "type": "git",
