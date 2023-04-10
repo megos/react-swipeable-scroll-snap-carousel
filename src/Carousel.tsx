@@ -27,7 +27,8 @@ export const Carousel: React.FC<CarouselProps> = ({
     if (carouselRef.current.scrollLeft === nextScrollLeft) return
     isFirstScroll
       ? carouselRef.current.classList.add(scrolling)
-      : (skipHandleScrollRef.current = true)
+      : // Skip handling the scroll event. for example, does not fire changing to index 2 when the index changes from 1 to 3.
+        (skipHandleScrollRef.current = true)
     carouselRef.current.scrollLeft = nextScrollLeft
   }, [index])
 
@@ -45,7 +46,7 @@ export const Carousel: React.FC<CarouselProps> = ({
     [index, onChangeIndex],
   )
 
-  const handlePointerDown = useCallback(() => {
+  const handleScrollStart = useCallback(() => {
     skipHandleScrollRef.current = false
   }, [])
 
@@ -89,7 +90,8 @@ export const Carousel: React.FC<CarouselProps> = ({
       className={`${container} ${className}`}
       ref={carouselRef}
       onScroll={handleScroll}
-      onPointerDown={handlePointerDown}
+      onWheel={handleScrollStart}
+      onPointerDown={handleScrollStart}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleEnd}
