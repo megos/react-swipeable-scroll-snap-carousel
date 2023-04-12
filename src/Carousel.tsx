@@ -46,8 +46,12 @@ export const Carousel: React.FC<CarouselProps> = ({
     [index, onChangeIndex],
   )
 
-  const handleScrollStart = useCallback(() => {
+  const handlePointerDown = useCallback(() => {
     skipHandleScrollRef.current = false
+  }, [])
+
+  const handleWheel = useCallback((e: React.WheelEvent<HTMLDivElement>) => {
+    if (Math.abs(e.deltaX) !== 0) skipHandleScrollRef.current = false
   }, [])
 
   const handleMouseDown = useCallback(
@@ -90,8 +94,8 @@ export const Carousel: React.FC<CarouselProps> = ({
       className={`${container} ${className}`}
       ref={carouselRef}
       onScroll={handleScroll}
-      onWheel={handleScrollStart}
-      onPointerDown={handleScrollStart}
+      onWheel={handleWheel}
+      onPointerDown={handlePointerDown}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleEnd}
