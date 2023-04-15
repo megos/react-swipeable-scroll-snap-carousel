@@ -1,11 +1,11 @@
 import React, { PropsWithChildren, useCallback, useEffect, useRef } from 'react'
 import { container, scrolling } from './Carousel.css'
 
-export type CarouselProps = PropsWithChildren & {
+export type CarouselProps = PropsWithChildren<{
   index: number
   onChangeIndex: (index: number) => void
   className?: string
-}
+}>
 
 export const Carousel: React.FC<CarouselProps> = ({
   index,
