@@ -25,10 +25,12 @@ export const Carousel: React.FC<CarouselProps> = ({
     const width = carouselRef.current.offsetWidth
     const nextScrollLeft = index * width
     if (carouselRef.current.scrollLeft === nextScrollLeft) return
-    isFirstScroll
-      ? carouselRef.current.classList.add(scrolling)
-      : // Skip handling the scroll event. for example, does not fire changing to index 2 when the index changes from 1 to 3.
-        (skipHandleScrollRef.current = true)
+    if (isFirstScroll) {
+      carouselRef.current.classList.add(scrolling)
+    } else {
+      // Skip handling the scroll event. for example, does not fire changing to index 2 when the index changes from 1 to 3.
+      skipHandleScrollRef.current = true
+    }
     carouselRef.current.scrollLeft = nextScrollLeft
   }, [index])
 
