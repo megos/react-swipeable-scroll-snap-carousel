@@ -5,8 +5,8 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: rome/setup-rome@v0.4
+    - uses: actions/setup-node@v3
       with:
-        version: latest 
-    - uses: actions/checkout@v3
-    - run: rome ci src examples
+        node-version: 16
+    - uses: actions/checkout@v4
+    - run: npx --package @biomejs/biome -c 'biome ci src examples'

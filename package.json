@@ -25,8 +25,8 @@
     "dev": "vite",
     "build": "vite build && tsc -p tsconfig.types.json",
     "preview": "vite preview",
-    "lint": "rome check src examples",
-    "format": "rome format src examples --write",
+    "lint": "biome check src examples",
+    "format": "biome format src examples --write",
     "build:page": "vite -c vite.config.page.ts build"
   },
   "devDependencies": {
@@ -38,7 +38,7 @@
     "cypress": "^13.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rome": "^12.0.0",
+    "@biomejs/biome": "^1.2.2",
     "typescript": "^5.0.4",
     "vite": "^4.2.1",
     "vite-plugin-css-injected-by-js": "^3.1.0"
