@@ -45,7 +45,7 @@ export const Carousel: React.FC<CarouselProps> = ({
         onChangeIndex(x / width)
       }
     },
-    [index, onChangeIndex],
+    [onChangeIndex],
   )
 
   const handlePointerDown = useCallback(() => {
