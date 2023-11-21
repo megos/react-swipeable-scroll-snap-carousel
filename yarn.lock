@@ -660,7 +660,7 @@
   dependencies:
     "@babel/core" "^7.20.7"
 
-"@vanilla-extract/css@^1.10.0", "@vanilla-extract/css@^1.11.0":
+"@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.14.0":
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.14.0.tgz#45fab9c04d893e3e363cf2cde7559d21233b7f63"
   integrity sha512-rYfm7JciWZ8PFzBM/HDiE2GLnKI3xJ6/vdmVJ5BSgcCZ5CxRlM9Cjqclni9lGzF3eMOijnUhCd/KV8TOzyzbMA==
@@ -677,17 +677,17 @@
     modern-ahocorasick "^1.0.0"
     outdent "^0.8.0"
 
-"@vanilla-extract/integration@^6.0.2":
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-6.2.1.tgz#e87849ed3d8e9ddd2703b8b8597fdbff08cf62ad"
-  integrity sha512-+xYJz07G7TFAMZGrOqArOsURG+xcYvqctujEkANjw2McCBvGEK505RxQqOuNiA9Mi9hgGdNp2JedSa94f3eoLg==
+"@vanilla-extract/integration@^6.2.4":
+  version "6.2.4"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-6.2.4.tgz#bd8a5ec0916051c1ef5fb66d8484a5cad8d8c58d"
+  integrity sha512-+AfymNMVq9sEUe0OJpdCokmPZg4Zi6CqKaW/PnUOfDwEn53ighHOMOBl5hAgxYR8Kiz9NG43Bn00mkjWlFi+ng==
   dependencies:
     "@babel/core" "^7.20.7"
     "@babel/plugin-syntax-typescript" "^7.20.0"
     "@vanilla-extract/babel-plugin-debug-ids" "^1.0.2"
-    "@vanilla-extract/css" "^1.10.0"
+    "@vanilla-extract/css" "^1.14.0"
     esbuild "0.17.6"
-    eval "0.1.6"
+    eval "0.1.8"
     find-up "^5.0.0"
     javascript-stringify "^2.0.1"
     lodash "^4.17.21"
@@ -702,14 +702,14 @@
   integrity sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==
 
 "@vanilla-extract/vite-plugin@^3.8.0":
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-3.9.0.tgz#40bbb39df09865b4ffe1c5e6db10d85c73e71d2a"
-  integrity sha512-Q2HYAyEJ93Uy7GHQPPiP8SXwPMHGpd4d0YnrIQqB0YZccYbGJR/WFIln9Dmbzx2pdngQUoOfhwEg6kJF8sQrog==
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-3.9.2.tgz#5f4a8e884b768d5c9332931b69479295285064c8"
+  integrity sha512-WYgWiEs+nw+lNazyW0Ixp0MMgtNgPL+8fFKrol1V5XoNIzRrYPGfuLhRI7PwheSWQVGF7OOer0kUWQcLey1vOQ==
   dependencies:
-    "@vanilla-extract/integration" "^6.0.2"
+    "@vanilla-extract/integration" "^6.2.4"
     outdent "^0.8.0"
     postcss "^8.3.6"
-    postcss-load-config "^3.1.0"
+    postcss-load-config "^4.0.1"
 
 "@vitejs/plugin-react@^4.0.0":
   version "4.1.1"
@@ -1233,11 +1233,12 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==
 
-eval@0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/eval/-/eval-0.1.6.tgz#9620d7d8c85515e97e6b47c5814f46ae381cb3cc"
-  integrity sha512-o0XUw+5OGkXw4pJZzQoXUk+H87DHuC+7ZE//oSrRGtatTmr12oTnLfg6QOq9DyTt0c/p4TwzgmkKrBzWTSizyQ==
+eval@0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/eval/-/eval-0.1.8.tgz#2b903473b8cc1d1989b83a1e7923f883eb357f85"
+  integrity sha512-EzV94NYKoO09GLXGjXj9JIlXijVck4ONSr5wiCWDvhsvj5jxSrzTmRU/9C1DyB6uToszLs8aifA6NQ7lEQdvFw==
   dependencies:
+    "@types/node" "*"
     require-like ">= 0.1.1"
 
 eventemitter2@6.4.7:
@@ -1602,10 +1603,10 @@ lazy-ass@^1.6.0:
   resolved "https://registry.yarnpkg.com/lazy-ass/-/lazy-ass-1.6.0.tgz#7999655e8646c17f089fdd187d150d3324d54513"
   integrity sha512-cc8oEVoctTvsFZ/Oje/kGnHbpWHYBe8IAJe4C0QNc3t8uM/0Y8+erSz/7Y1ALuXTEZTMvxXwO6YbX1ey3ujiZw==
 
-lilconfig@^2.0.5:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.6.tgz#32a384558bd58af3d4c6e077dd1ad1d397bc69d4"
-  integrity sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==
+lilconfig@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-3.0.0.tgz#f8067feb033b5b74dab4602a5f5029420be749bc"
+  integrity sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==
 
 listr2@^3.8.3:
   version "3.14.0"
@@ -1859,13 +1860,13 @@ pkg-types@^1.0.2:
     mlly "^1.1.1"
     pathe "^1.1.0"
 
-postcss-load-config@^3.1.0:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-3.1.4.tgz#1ab2571faf84bb078877e1d07905eabe9ebda855"
-  integrity sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==
+postcss-load-config@^4.0.1:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-4.0.2.tgz#7159dcf626118d33e299f485d6afe4aff7c4a3e3"
+  integrity sha512-bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==
   dependencies:
-    lilconfig "^2.0.5"
-    yaml "^1.10.2"
+    lilconfig "^3.0.0"
+    yaml "^2.3.4"
 
 postcss@^8.3.6, postcss@^8.4.27:
   version "8.4.31"
@@ -2324,10 +2325,10 @@ yallist@^4.0.0:
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 
-yaml@^1.10.2:
-  version "1.10.2"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
-  integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
+yaml@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.3.4.tgz#53fc1d514be80aabf386dc6001eb29bf3b7523b2"
+  integrity sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==
 
 yauzl@^2.10.0:
   version "2.10.0"
