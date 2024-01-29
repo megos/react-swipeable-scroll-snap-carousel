@@ -709,9 +709,9 @@
     "@babel/core" "^7.20.7"
 
 "@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.14.0":
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.14.0.tgz#45fab9c04d893e3e363cf2cde7559d21233b7f63"
-  integrity sha512-rYfm7JciWZ8PFzBM/HDiE2GLnKI3xJ6/vdmVJ5BSgcCZ5CxRlM9Cjqclni9lGzF3eMOijnUhCd/KV8TOzyzbMA==
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.14.1.tgz#ae24b2d2ff6abd452f8e72440073b05a0372d62e"
+  integrity sha512-V4JUuHNjZgl64NGfkDJePqizkNgiSpphODtZEs4cCPuxLAzwOUJYATGpejwimJr1n529kq4DEKWexW22LMBokw==
   dependencies:
     "@emotion/hash" "^0.9.0"
     "@vanilla-extract/private" "^1.0.3"
