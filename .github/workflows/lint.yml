@@ -7,6 +7,6 @@ jobs:
     steps:
     - uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 20
     - uses: actions/checkout@v4
     - run: npx --package @biomejs/biome -c 'biome ci src examples'
