@@ -27,7 +27,7 @@
     "preview": "vite preview",
     "lint": "biome check src examples",
     "format": "biome format src examples --write",
-    "build:page": "vite -c vite.config.page.ts build"
+    "build:page": "vite -c vite.config.page.mts build"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",
