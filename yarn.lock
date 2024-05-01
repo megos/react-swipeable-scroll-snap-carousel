@@ -866,7 +866,7 @@
   dependencies:
     "@babel/core" "^7.23.9"
 
-"@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.14.0":
+"@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.14.2":
   version "1.14.2"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.14.2.tgz#121d0b8633ea7e85505e4abab64f60670617d38d"
   integrity sha512-OasEW4ojGqqRiUpsyEDUMrSkLnmwbChtafkogpCZ1eDAgAZ9eY9CHLYodj2nB8aV5T25kQ5shm92k25ngjYhhg==
@@ -883,15 +883,15 @@
     modern-ahocorasick "^1.0.0"
     outdent "^0.8.0"
 
-"@vanilla-extract/integration@^7.1.0":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-7.1.1.tgz#fd7781f859efea5698a2f1bb0b3d1107096ea496"
-  integrity sha512-2JjDKL2HDTazis4oTkUFsQFUyw61k8oym9r0NOLSJC0JB0W25W1ryVZvDx74d3deIyB5AWbCselyzl3gja30kQ==
+"@vanilla-extract/integration@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-7.1.2.tgz#1685cc899babb3d6f31f4450d95a8324acc9ed17"
+  integrity sha512-jpjw0L3P1E+U9L8OAFVMGpPFbNPD+/Vpfew7oOKBYipCrRZEqShu3WLXuUxjXz/mcIH7KCS5nasIdy2VclbEaQ==
   dependencies:
     "@babel/core" "^7.23.9"
     "@babel/plugin-syntax-typescript" "^7.23.3"
     "@vanilla-extract/babel-plugin-debug-ids" "^1.0.5"
-    "@vanilla-extract/css" "^1.14.0"
+    "@vanilla-extract/css" "^1.14.2"
     esbuild "npm:esbuild@~0.17.6 || ~0.18.0 || ~0.19.0"
     eval "0.1.8"
     find-up "^5.0.0"
@@ -908,11 +908,11 @@
   integrity sha512-8FGD6AejeC/nXcblgNCM5rnZb9KXa4WNkR03HCWtdJBpANjTgjHEglNLFnhuvdQ78tC6afaxBPI+g7F2NX3tgg==
 
 "@vanilla-extract/vite-plugin@^4.0.6":
-  version "4.0.6"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-4.0.6.tgz#f36de978f4508ad932dd8d54935c12cde3be67be"
-  integrity sha512-uT2AhzxEC8qdn7SFxD/MHF7pxyFMb2e7HY3+isyPDzkTyIdiA/ZXk7qwWhcigFMNCJ6YuyxFQJmiDhP9U9oOmg==
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-4.0.7.tgz#40cd5de73bacf89e2ca69ba61163f50e62e77b3c"
+  integrity sha512-uRAFWdq5Eq0ybpgW2P0LNOw8eW+MTg/OFo5K0Hsl2cKu/Tu2tabCsBf6vNjfhDrm4jBShHy1wJIVcYxf6sczVQ==
   dependencies:
-    "@vanilla-extract/integration" "^7.1.0"
+    "@vanilla-extract/integration" "^7.1.2"
 
 "@vitejs/plugin-react@^4.2.1":
   version "4.2.1"
