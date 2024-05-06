@@ -866,7 +866,7 @@
   dependencies:
     "@babel/core" "^7.23.9"
 
-"@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.14.2":
+"@vanilla-extract/css@^1.11.0":
   version "1.14.2"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.14.2.tgz#121d0b8633ea7e85505e4abab64f60670617d38d"
   integrity sha512-OasEW4ojGqqRiUpsyEDUMrSkLnmwbChtafkogpCZ1eDAgAZ9eY9CHLYodj2nB8aV5T25kQ5shm92k25ngjYhhg==
@@ -883,22 +883,38 @@
     modern-ahocorasick "^1.0.0"
     outdent "^0.8.0"
 
-"@vanilla-extract/integration@^7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-7.1.2.tgz#1685cc899babb3d6f31f4450d95a8324acc9ed17"
-  integrity sha512-jpjw0L3P1E+U9L8OAFVMGpPFbNPD+/Vpfew7oOKBYipCrRZEqShu3WLXuUxjXz/mcIH7KCS5nasIdy2VclbEaQ==
+"@vanilla-extract/css@^1.15.1":
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.15.1.tgz#cf68cb95cdb521056af9ebf7907694806ae89228"
+  integrity sha512-puAfTKAUtsMr2+D+grQNjU5umsdw9zdVgQflUlbzS/tGORaAHdgaYz7jfKPmz1c4ZcpJ6uFNOiI50NDOAzzhyg==
+  dependencies:
+    "@emotion/hash" "^0.9.0"
+    "@vanilla-extract/private" "^1.0.4"
+    css-what "^6.1.0"
+    cssesc "^3.0.0"
+    csstype "^3.0.7"
+    dedent "^1.5.1"
+    deep-object-diff "^1.1.9"
+    deepmerge "^4.2.2"
+    media-query-parser "^2.0.2"
+    modern-ahocorasick "^1.0.0"
+    picocolors "^1.0.0"
+
+"@vanilla-extract/integration@^7.1.3":
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-7.1.4.tgz#f0144532eb51c4a44d78fc5b9f88dd985ba9390c"
+  integrity sha512-/9RYhOVvr28Vn5pDahgfccFqlfepyogdlGg3cabR9kVvKHQdNkAFuPp2mx8EzPPI2D9ZIcPwfb3jp8t2Beo/Vw==
   dependencies:
     "@babel/core" "^7.23.9"
     "@babel/plugin-syntax-typescript" "^7.23.3"
     "@vanilla-extract/babel-plugin-debug-ids" "^1.0.5"
-    "@vanilla-extract/css" "^1.14.2"
+    "@vanilla-extract/css" "^1.15.1"
+    dedent "^1.5.3"
     esbuild "npm:esbuild@~0.17.6 || ~0.18.0 || ~0.19.0"
     eval "0.1.8"
     find-up "^5.0.0"
     javascript-stringify "^2.0.1"
-    lodash "^4.17.21"
     mlly "^1.4.2"
-    outdent "^0.8.0"
     vite "^5.0.11"
     vite-node "^1.2.0"
 
@@ -908,11 +924,11 @@
   integrity sha512-8FGD6AejeC/nXcblgNCM5rnZb9KXa4WNkR03HCWtdJBpANjTgjHEglNLFnhuvdQ78tC6afaxBPI+g7F2NX3tgg==
 
 "@vanilla-extract/vite-plugin@^4.0.6":
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-4.0.7.tgz#40cd5de73bacf89e2ca69ba61163f50e62e77b3c"
-  integrity sha512-uRAFWdq5Eq0ybpgW2P0LNOw8eW+MTg/OFo5K0Hsl2cKu/Tu2tabCsBf6vNjfhDrm4jBShHy1wJIVcYxf6sczVQ==
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-4.0.9.tgz#c4998b4612f94aa84993e633e2411f19c7ee875a"
+  integrity sha512-O3SU6whsm01lD9Kwpkz9yF14u0SCF0jbGtvMpslXGDZ6f3B9oq0M6PViu94gEYy8Xt2B4y23NF8RCrMOwDn81g==
   dependencies:
-    "@vanilla-extract/integration" "^7.1.2"
+    "@vanilla-extract/integration" "^7.1.3"
 
 "@vitejs/plugin-react@^4.2.1":
   version "4.2.1"
@@ -1316,6 +1332,11 @@ debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.4:
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
   dependencies:
     ms "2.1.2"
+
+dedent@^1.5.1, dedent@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/dedent/-/dedent-1.5.3.tgz#99aee19eb9bae55a67327717b6e848d0bf777e5a"
+  integrity sha512-NHQtfOOW68WD8lgypbLA5oT+Bt0xXJhiYvoR6SmmNXZfpzOGXwdKWmcwG8N7PwVVWV3eF/68nmD9BaJSsTBhyQ==
 
 deep-object-diff@^1.1.9:
   version "1.1.9"
