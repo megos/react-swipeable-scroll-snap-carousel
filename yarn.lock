@@ -779,10 +779,10 @@
   dependencies:
     "@types/node" "*"
 
-"@vanilla-extract/babel-plugin-debug-ids@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin-debug-ids/-/babel-plugin-debug-ids-1.1.0.tgz#783b33d55c4c4cdad0b2ddcd681ecbbe2dfc0a7b"
-  integrity sha512-Zy9bKjaL2P5zsrFYQJ8IjWGlFODmZrpvFmjFE0Zv8om55Pz1JtpJtL6DvlxlWUxbVaP1HKCqsmEfFOZN8fX/ZQ==
+"@vanilla-extract/babel-plugin-debug-ids@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin-debug-ids/-/babel-plugin-debug-ids-1.2.0.tgz#4211264dc2c9bfe85a733baba5492ea64e560c6c"
+  integrity sha512-z5nx2QBnOhvmlmBKeRX5sPVLz437wV30u+GJL+Hzj1rGiJYVNvgIIlzUpRNjVQ0MgAgiQIqIUbqPnmMc6HmDlQ==
   dependencies:
     "@babel/core" "^7.23.9"
 
@@ -804,10 +804,10 @@
     modern-ahocorasick "^1.0.0"
     picocolors "^1.0.0"
 
-"@vanilla-extract/css@^1.16.1":
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.16.1.tgz#abf913da7fe1eba28bbdf0ce4d594c5aee385a13"
-  integrity sha512-3jKxH5ty/ZjmGoLAx8liY7e87FRCIJfnuufX/K9fQklu0YHP3ClrNisU++LkZuD+GZleqMSAQMF0r8Otln+OPQ==
+"@vanilla-extract/css@^1.17.0":
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.0.tgz#afdd613cb24ebbfe7949736f5a55ec57ff93fda5"
+  integrity sha512-W6FqVFDD+C71ZlKsuj0MxOXSvHb1tvQ9h/+79aYfi097wLsALrnnBzd0by8C///iurrpQ3S+SH74lXd7Lr9MvA==
   dependencies:
     "@emotion/hash" "^0.9.0"
     "@vanilla-extract/private" "^1.0.6"
@@ -822,15 +822,15 @@
     modern-ahocorasick "^1.0.0"
     picocolors "^1.0.0"
 
-"@vanilla-extract/integration@^7.1.11":
-  version "7.1.11"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-7.1.11.tgz#90f536da4fd16e2a998a1ace90e2acf97bdd60eb"
-  integrity sha512-IGRaLrpkjyVHTHDZQBQvFBl399yRfSMJoVI2KaocEZB33aP+H4Qup83od2hc6R5IxGWdvbiiCOJCYsnmFiy85Q==
+"@vanilla-extract/integration@^7.1.12":
+  version "7.1.12"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-7.1.12.tgz#6eba21f7e5d67f3253a7dda087408e16e683a265"
+  integrity sha512-71HFjnfL7qXM3hqyk7z9c8zrudfO9Sut6IhSmH8IKwmLk/tIMFIL86L6nYpItfUFUa/mrER6YUQPp/SfwjRvkw==
   dependencies:
     "@babel/core" "^7.23.9"
     "@babel/plugin-syntax-typescript" "^7.23.3"
-    "@vanilla-extract/babel-plugin-debug-ids" "^1.1.0"
-    "@vanilla-extract/css" "^1.16.1"
+    "@vanilla-extract/babel-plugin-debug-ids" "^1.2.0"
+    "@vanilla-extract/css" "^1.17.0"
     dedent "^1.5.3"
     esbuild "npm:esbuild@>=0.17.6 <0.24.0"
     eval "0.1.8"
@@ -846,11 +846,11 @@
   integrity sha512-ytsG/JLweEjw7DBuZ/0JCN4WAQgM9erfSTdS1NQY778hFQSZ6cfCDEZZ0sgVm4k54uNz6ImKB33AYvSR//fjxw==
 
 "@vanilla-extract/vite-plugin@^4.0.6":
-  version "4.0.18"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-4.0.18.tgz#ecc0b57571f999883a0516e223cc72d8383e9edf"
-  integrity sha512-j5vJVbvW33THGXG3ZI+nfgeYCknlBEWTJVphZWSAGmLO4XO4690m/iQQg+3gUtla3wvU8eyA2qmJNa05Wa7mVA==
+  version "4.0.19"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-4.0.19.tgz#adcf8e2545231166ea7182472a06b7a1b4a088a0"
+  integrity sha512-NtE/sAIesCAu+6JHlanLgmfDJn/cqG8dfElfh5n1PvG2LTSMVMQhVbDefxcVhGjw1lt5QbG+u3dpZMY7KPwJhw==
   dependencies:
-    "@vanilla-extract/integration" "^7.1.11"
+    "@vanilla-extract/integration" "^7.1.12"
 
 "@vitejs/plugin-react@^4.2.1":
   version "4.3.2"
