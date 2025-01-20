@@ -35,7 +35,7 @@
     "@vanilla-extract/css": "^1.11.0",
     "@vanilla-extract/vite-plugin": "^4.0.6",
     "@vitejs/plugin-react": "^4.2.1",
-    "cypress": "^13.1.0",
+    "cypress": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "@biomejs/biome": "^1.6.3",
