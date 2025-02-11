@@ -40,7 +40,7 @@
     "react-dom": "^19.0.0",
     "@biomejs/biome": "^1.6.3",
     "typescript": "^5.0.4",
-    "vite": "^5.2.6",
+    "vite": "^6.1.0",
     "vite-plugin-css-injected-by-js": "^3.5.0"
   },
   "peerDependencies": {
