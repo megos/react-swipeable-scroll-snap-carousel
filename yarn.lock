@@ -777,17 +777,17 @@
   dependencies:
     "@babel/core" "^7.23.9"
 
-"@vanilla-extract/compiler@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/compiler/-/compiler-0.1.2.tgz#4e5e9c50f6e6cc376067c8c558b37efabb13ed87"
-  integrity sha512-B4T5P+Fz2Big0GRspQSi4BIyPF3cJ2/+/NWSI6Lw5Tq2JXv9nzjTGU4gKlWzyvaxt/0CLPE+Zo40fUsUv5lttQ==
+"@vanilla-extract/compiler@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/compiler/-/compiler-0.1.3.tgz#f437f5cf72549542e3b671f81f34f309fd30e6d6"
+  integrity sha512-dSkRFwHfOccEZGlQ6hdRDGQMLko8RZnAKd06u9+gPkRyjNt96nG6ZE/wEh4+3cdY27DPdTLh+TPlTp2DYo94OA==
   dependencies:
-    "@vanilla-extract/css" "^1.17.1"
-    "@vanilla-extract/integration" "^8.0.1"
+    "@vanilla-extract/css" "^1.17.2"
+    "@vanilla-extract/integration" "^8.0.2"
     vite "^5.0.0 || ^6.0.0"
     vite-node "^3.0.4"
 
-"@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.17.1":
+"@vanilla-extract/css@^1.11.0":
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.1.tgz#5e91d6bfbc5848a264bddcaf31d601f6f67e5cc1"
   integrity sha512-tOHQXHm10FrJeXKFeWE09JfDGN/tvV6mbjwoNB9k03u930Vg021vTnbrCwVLkECj9Zvh/SHLBHJ4r2flGqfovw==
@@ -805,15 +805,33 @@
     modern-ahocorasick "^1.0.0"
     picocolors "^1.0.0"
 
-"@vanilla-extract/integration@^8.0.1":
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-8.0.1.tgz#0a99a5e4614c2d383f037bcd95f46d6fc25352dc"
-  integrity sha512-ag64t+AM96XGOiloc5ryZHP5rbfleFyfoPKa42QqOuyAlLx/UpW5epSY+RUldizP4P/uLy5WFRiYlNddK1eQUQ==
+"@vanilla-extract/css@^1.17.2":
+  version "1.17.2"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.2.tgz#e92c41cf67095924cba676b73a9de9370346fccb"
+  integrity sha512-gowpfR1zJSplDO7NkGf2Vnw9v9eG1P3aUlQpxa1pOjcknbgWw7UPzIboB6vGJZmoUvDZRFmipss3/Q+RRfhloQ==
+  dependencies:
+    "@emotion/hash" "^0.9.0"
+    "@vanilla-extract/private" "^1.0.7"
+    css-what "^6.1.0"
+    cssesc "^3.0.0"
+    csstype "^3.0.7"
+    dedent "^1.5.3"
+    deep-object-diff "^1.1.9"
+    deepmerge "^4.2.2"
+    lru-cache "^10.4.3"
+    media-query-parser "^2.0.2"
+    modern-ahocorasick "^1.0.0"
+    picocolors "^1.0.0"
+
+"@vanilla-extract/integration@^8.0.2":
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-8.0.2.tgz#155d6e8916659de985a3da55a71fe115f71df2f0"
+  integrity sha512-w9OvWwsYkqyuyHf9NLnOJ8ap0FGTy2pAeWftgxAEkKE3tF1aYeyEtYRHKxfVH6JRgi8JIeQqELHGMSwz+BxwiA==
   dependencies:
     "@babel/core" "^7.23.9"
     "@babel/plugin-syntax-typescript" "^7.23.3"
     "@vanilla-extract/babel-plugin-debug-ids" "^1.2.0"
-    "@vanilla-extract/css" "^1.17.1"
+    "@vanilla-extract/css" "^1.17.2"
     dedent "^1.5.3"
     esbuild "npm:esbuild@>=0.17.6 <0.26.0"
     eval "0.1.8"
@@ -826,13 +844,18 @@
   resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.6.tgz#f10bbf3189f7b827d0bd7f804a6219dd03ddbdd4"
   integrity sha512-ytsG/JLweEjw7DBuZ/0JCN4WAQgM9erfSTdS1NQY778hFQSZ6cfCDEZZ0sgVm4k54uNz6ImKB33AYvSR//fjxw==
 
+"@vanilla-extract/private@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.7.tgz#491fb106f9d4a5a96e3e5be29f52ecc228c0952b"
+  integrity sha512-v9Yb0bZ5H5Kr8ciwPXyEToOFD7J/fKKH93BYP7NCSZg02VYsA/pNFrLeVDJM2OO/vsygduPKuiEI6ORGQ4IcBw==
+
 "@vanilla-extract/vite-plugin@^5.0.0":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-5.0.1.tgz#4e768809dea23e9f6427c90c7137110f763f70bf"
-  integrity sha512-65IhqaNEAv/KjO1jJ52hSXiKUJqeFPlyY/hpRT71Y6bFoasHhzOcZKIQ/ze4fQovjjDL4US565rEiIn1I2qhFA==
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-5.0.2.tgz#6d25767923736511b7fc7788bb170aa3b6416476"
+  integrity sha512-R2yFqeZm6/Z+uZp1teldPHM74ihOjCYvu9ST05mezYVM/g40Pyyz6BDrWY6txNAtuRUQIg6q3Ev66FB9rD2l7w==
   dependencies:
-    "@vanilla-extract/compiler" "^0.1.2"
-    "@vanilla-extract/integration" "^8.0.1"
+    "@vanilla-extract/compiler" "^0.1.3"
+    "@vanilla-extract/integration" "^8.0.2"
 
 "@vitejs/plugin-react@^4.2.1":
   version "4.4.1"
