@@ -10,7 +10,7 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@babel/code-frame@^7.25.9", "@babel/code-frame@^7.26.2":
+"@babel/code-frame@^7.26.2":
   version "7.26.2"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.26.2.tgz#4b5fab97d33338eff916235055f0ebc21e573a85"
   integrity sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==
@@ -52,17 +52,6 @@
   dependencies:
     "@babel/parser" "^7.27.0"
     "@babel/types" "^7.27.0"
-    "@jridgewell/gen-mapping" "^0.3.5"
-    "@jridgewell/trace-mapping" "^0.3.25"
-    jsesc "^3.0.2"
-
-"@babel/generator@^7.26.3":
-  version "7.26.3"
-  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.26.3.tgz#ab8d4360544a425c90c248df7059881f4b2ce019"
-  integrity sha512-6FF/urZvD0sTeO7k6/B15pMLC4CHUv1426lzr3N01aHJTl046uCAh9LXW/fzeXXjPNCJ6iABW5XaWOsIZB93aQ==
-  dependencies:
-    "@babel/parser" "^7.26.3"
-    "@babel/types" "^7.26.3"
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.25"
     jsesc "^3.0.2"
@@ -123,14 +112,7 @@
     "@babel/template" "^7.27.0"
     "@babel/types" "^7.27.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.20.7", "@babel/parser@^7.25.9", "@babel/parser@^7.26.3":
-  version "7.26.3"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.26.3.tgz#8c51c5db6ddf08134af1ddbacf16aaab48bac234"
-  integrity sha512-WJ/CvmY8Mea8iDXo6a7RK2wbmJITT5fN3BEkRuFlxVyNx8jOKIIhmC4fSkTcPcf8JyavbBwIe6OpiCOBXt/IcA==
-  dependencies:
-    "@babel/types" "^7.26.3"
-
-"@babel/parser@^7.26.10", "@babel/parser@^7.27.0":
+"@babel/parser@^7.1.0", "@babel/parser@^7.20.7", "@babel/parser@^7.26.10", "@babel/parser@^7.27.0":
   version "7.27.0"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.27.0.tgz#3d7d6ee268e41d2600091cbd4e145ffee85a44ec"
   integrity sha512-iaepho73/2Pz7w2eMS0Q5f83+0RKI7i4xmiYeBmDzfRVbQtTOG7Ts0S4HzJVsTMGI9keU8rNfuZr8DKfSt7Yyg==
@@ -165,15 +147,6 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@babel/template@^7.25.9":
-  version "7.25.9"
-  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.25.9.tgz#ecb62d81a8a6f5dc5fe8abfc3901fc52ddf15016"
-  integrity sha512-9DGttpmPvIxBb/2uwpVo3dqJ+O6RooAFOS+lB+xDqoE2PVCE8nfoHMdZLpfCQRLwvohzXISPZcgxt80xLfsuwg==
-  dependencies:
-    "@babel/code-frame" "^7.25.9"
-    "@babel/parser" "^7.25.9"
-    "@babel/types" "^7.25.9"
-
 "@babel/template@^7.26.9", "@babel/template@^7.27.0":
   version "7.27.0"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.27.0.tgz#b253e5406cc1df1c57dcd18f11760c2dbf40c0b4"
@@ -183,20 +156,7 @@
     "@babel/parser" "^7.27.0"
     "@babel/types" "^7.27.0"
 
-"@babel/traverse@^7.25.9":
-  version "7.26.4"
-  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.26.4.tgz#ac3a2a84b908dde6d463c3bfa2c5fdc1653574bd"
-  integrity sha512-fH+b7Y4p3yqvApJALCPJcwb0/XaOSgtK4pzV6WVjPR5GLFQBRI7pfoX2V2iM48NXvX07NUxxm1Vw98YjqTcU5w==
-  dependencies:
-    "@babel/code-frame" "^7.26.2"
-    "@babel/generator" "^7.26.3"
-    "@babel/parser" "^7.26.3"
-    "@babel/template" "^7.25.9"
-    "@babel/types" "^7.26.3"
-    debug "^4.3.1"
-    globals "^11.1.0"
-
-"@babel/traverse@^7.26.10":
+"@babel/traverse@^7.25.9", "@babel/traverse@^7.26.10":
   version "7.27.0"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.27.0.tgz#11d7e644779e166c0442f9a07274d02cd91d4a70"
   integrity sha512-19lYZFzYVQkkHkl4Cy4WrAVcqBkgvV2YM2TU3xG6DIwO7O3ecbDPfW3yM3bjAGcqcQHi+CCtjMR3dIEHxsd6bA==
@@ -209,15 +169,7 @@
     debug "^4.3.1"
     globals "^11.1.0"
 
-"@babel/types@^7.0.0", "@babel/types@^7.20.7", "@babel/types@^7.25.9", "@babel/types@^7.26.3":
-  version "7.26.3"
-  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.26.3.tgz#37e79830f04c2b5687acc77db97fbc75fb81f3c0"
-  integrity sha512-vN5p+1kl59GVKMvTHt55NzzmYVxprfJD+ql7U9NFIfKCBkYE55LYtS+WtPlaYOyzydrKI8Nezd+aZextrd+FMA==
-  dependencies:
-    "@babel/helper-string-parser" "^7.25.9"
-    "@babel/helper-validator-identifier" "^7.25.9"
-
-"@babel/types@^7.26.10", "@babel/types@^7.27.0":
+"@babel/types@^7.0.0", "@babel/types@^7.20.7", "@babel/types@^7.25.9", "@babel/types@^7.26.10", "@babel/types@^7.27.0":
   version "7.27.0"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.27.0.tgz#ef9acb6b06c3173f6632d993ecb6d4ae470b4559"
   integrity sha512-H45s8fVLYjbhFH62dIJ3WtmJ6RSPt/3DRO0ZcT2SUiYiQyz3BLVb9ADEnLl91m74aQPS3AzzeajZHYOalWe3bg==
