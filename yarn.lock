@@ -788,12 +788,12 @@
     vite-node "^3.0.4"
 
 "@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.17.1":
-  version "1.17.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.1.tgz#5e91d6bfbc5848a264bddcaf31d601f6f67e5cc1"
-  integrity sha512-tOHQXHm10FrJeXKFeWE09JfDGN/tvV6mbjwoNB9k03u930Vg021vTnbrCwVLkECj9Zvh/SHLBHJ4r2flGqfovw==
+  version "1.17.2"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.2.tgz#e92c41cf67095924cba676b73a9de9370346fccb"
+  integrity sha512-gowpfR1zJSplDO7NkGf2Vnw9v9eG1P3aUlQpxa1pOjcknbgWw7UPzIboB6vGJZmoUvDZRFmipss3/Q+RRfhloQ==
   dependencies:
     "@emotion/hash" "^0.9.0"
-    "@vanilla-extract/private" "^1.0.6"
+    "@vanilla-extract/private" "^1.0.7"
     css-what "^6.1.0"
     cssesc "^3.0.0"
     csstype "^3.0.7"
@@ -821,10 +821,10 @@
     javascript-stringify "^2.0.1"
     mlly "^1.4.2"
 
-"@vanilla-extract/private@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.6.tgz#f10bbf3189f7b827d0bd7f804a6219dd03ddbdd4"
-  integrity sha512-ytsG/JLweEjw7DBuZ/0JCN4WAQgM9erfSTdS1NQY778hFQSZ6cfCDEZZ0sgVm4k54uNz6ImKB33AYvSR//fjxw==
+"@vanilla-extract/private@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.7.tgz#491fb106f9d4a5a96e3e5be29f52ecc228c0952b"
+  integrity sha512-v9Yb0bZ5H5Kr8ciwPXyEToOFD7J/fKKH93BYP7NCSZg02VYsA/pNFrLeVDJM2OO/vsygduPKuiEI6ORGQ4IcBw==
 
 "@vanilla-extract/vite-plugin@^5.0.0":
   version "5.0.1"
