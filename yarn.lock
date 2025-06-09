@@ -727,24 +727,24 @@
   dependencies:
     "@types/node" "*"
 
-"@vanilla-extract/babel-plugin-debug-ids@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin-debug-ids/-/babel-plugin-debug-ids-1.2.0.tgz#4211264dc2c9bfe85a733baba5492ea64e560c6c"
-  integrity sha512-z5nx2QBnOhvmlmBKeRX5sPVLz437wV30u+GJL+Hzj1rGiJYVNvgIIlzUpRNjVQ0MgAgiQIqIUbqPnmMc6HmDlQ==
+"@vanilla-extract/babel-plugin-debug-ids@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin-debug-ids/-/babel-plugin-debug-ids-1.2.1.tgz#0557ed01a513cee89b78bd47ac2437a5735dbebc"
+  integrity sha512-RkXKzcKVZtcDNmcGh8Bv9MNW6oYYUzy90GYt8amMrk5P+myXsdFSU9N7V+cJAf80l+AsMVMyK0GK7Qj35Sfppg==
   dependencies:
     "@babel/core" "^7.23.9"
 
-"@vanilla-extract/compiler@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/compiler/-/compiler-0.2.0.tgz#70266edc8fd270d08fa34e82d88df1411898afec"
-  integrity sha512-pDTwy/I/w0npflYg/f4IS3Wl+V+t5hqtbMfxKYrEMo4tBfUec1oZ1YL2Rq/KcHGo6Ge51JdLwYeNtzvsJOhRYg==
+"@vanilla-extract/compiler@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/compiler/-/compiler-0.2.1.tgz#540d202575f6e3f1b53f7fa28784cd518ae1043c"
+  integrity sha512-cvEJ4/mAyCqdB8JScOTq7foV2QLw3bOJMLEdvJADscMZrn8pkks+xCxwynAcpzrrL1bFm6/766ZAY1fPXD2O7Q==
   dependencies:
-    "@vanilla-extract/css" "^1.17.2"
-    "@vanilla-extract/integration" "^8.0.2"
+    "@vanilla-extract/css" "^1.17.3"
+    "@vanilla-extract/integration" "^8.0.3"
     vite "^5.0.0 || ^6.0.0"
     vite-node "^3.0.4"
 
-"@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.17.2":
+"@vanilla-extract/css@^1.11.0":
   version "1.17.2"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.2.tgz#e92c41cf67095924cba676b73a9de9370346fccb"
   integrity sha512-gowpfR1zJSplDO7NkGf2Vnw9v9eG1P3aUlQpxa1pOjcknbgWw7UPzIboB6vGJZmoUvDZRFmipss3/Q+RRfhloQ==
@@ -762,15 +762,33 @@
     modern-ahocorasick "^1.0.0"
     picocolors "^1.0.0"
 
-"@vanilla-extract/integration@^8.0.2":
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-8.0.2.tgz#155d6e8916659de985a3da55a71fe115f71df2f0"
-  integrity sha512-w9OvWwsYkqyuyHf9NLnOJ8ap0FGTy2pAeWftgxAEkKE3tF1aYeyEtYRHKxfVH6JRgi8JIeQqELHGMSwz+BxwiA==
+"@vanilla-extract/css@^1.17.3":
+  version "1.17.3"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.3.tgz#a73a874a762f4175a5c20ec96665016c17746fee"
+  integrity sha512-jHivr1UPoJTX5Uel4AZSOwrCf4mO42LcdmnhJtUxZaRWhW4FviFbIfs0moAWWld7GOT+2XnuVZjjA/K32uUnMQ==
+  dependencies:
+    "@emotion/hash" "^0.9.0"
+    "@vanilla-extract/private" "^1.0.8"
+    css-what "^6.1.0"
+    cssesc "^3.0.0"
+    csstype "^3.0.7"
+    dedent "^1.5.3"
+    deep-object-diff "^1.1.9"
+    deepmerge "^4.2.2"
+    lru-cache "^10.4.3"
+    media-query-parser "^2.0.2"
+    modern-ahocorasick "^1.0.0"
+    picocolors "^1.0.0"
+
+"@vanilla-extract/integration@^8.0.3":
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-8.0.3.tgz#d23c9ef76e2585c186e9b1951d50437e5946d31f"
+  integrity sha512-7sCd4kBp/u02iNq3cYBXtOzKyX5muoHylsqcEjyuJWfnxOb1iB/jDCyTsiSRXcByj/wKjgjItbAdm/uzrUlAVw==
   dependencies:
     "@babel/core" "^7.23.9"
     "@babel/plugin-syntax-typescript" "^7.23.3"
-    "@vanilla-extract/babel-plugin-debug-ids" "^1.2.0"
-    "@vanilla-extract/css" "^1.17.2"
+    "@vanilla-extract/babel-plugin-debug-ids" "^1.2.1"
+    "@vanilla-extract/css" "^1.17.3"
     dedent "^1.5.3"
     esbuild "npm:esbuild@>=0.17.6 <0.26.0"
     eval "0.1.8"
@@ -783,13 +801,18 @@
   resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.7.tgz#491fb106f9d4a5a96e3e5be29f52ecc228c0952b"
   integrity sha512-v9Yb0bZ5H5Kr8ciwPXyEToOFD7J/fKKH93BYP7NCSZg02VYsA/pNFrLeVDJM2OO/vsygduPKuiEI6ORGQ4IcBw==
 
+"@vanilla-extract/private@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.8.tgz#abd2efb13a708b922338386863ecc65aca74e143"
+  integrity sha512-oRAbUlq1SyTWCo7dQnTVm+xgJMqNl8K1dEempQHXzQvUuyEfBabMt0wNGf+VCHzvKbx/Bzr9p/2wy8WA9+2z2g==
+
 "@vanilla-extract/vite-plugin@^5.0.0":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-5.0.3.tgz#de7253405d8a1d30efa087ac97ad2bb5b91f1108"
-  integrity sha512-yivg/0e08FOu44U/bBzPRYYGeG3QtKTlMvxVeAkuAWyXBZ9mj2GjMCbgFLmChL7iIcV/hNp7DoLxBI9bdwJgLg==
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-5.0.4.tgz#90d69a9b8da4aa7150ad6682febc380d7d851f99"
+  integrity sha512-W+6kOZZF4nt+TF/savpSyU1ijb1GKZ/Su/SA71JMHXJKMvkB4AwibLgZUSbrvSeBQaBCsl+ZtZCqLQHeEXLNqA==
   dependencies:
-    "@vanilla-extract/compiler" "^0.2.0"
-    "@vanilla-extract/integration" "^8.0.2"
+    "@vanilla-extract/compiler" "^0.2.1"
+    "@vanilla-extract/integration" "^8.0.3"
 
 "@vitejs/plugin-react@^4.2.1":
   version "4.5.0"
