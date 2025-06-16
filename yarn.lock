@@ -727,24 +727,24 @@
   dependencies:
     "@types/node" "*"
 
-"@vanilla-extract/babel-plugin-debug-ids@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin-debug-ids/-/babel-plugin-debug-ids-1.2.1.tgz#0557ed01a513cee89b78bd47ac2437a5735dbebc"
-  integrity sha512-RkXKzcKVZtcDNmcGh8Bv9MNW6oYYUzy90GYt8amMrk5P+myXsdFSU9N7V+cJAf80l+AsMVMyK0GK7Qj35Sfppg==
+"@vanilla-extract/babel-plugin-debug-ids@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin-debug-ids/-/babel-plugin-debug-ids-1.2.2.tgz#0bcb26614d8c6c4c0d95f8f583d838ce71294633"
+  integrity sha512-MeDWGICAF9zA/OZLOKwhoRlsUW+fiMwnfuOAqFVohL31Agj7Q/RBWAYweqjHLgFBCsdnr6XIfwjJnmb2znEWxw==
   dependencies:
     "@babel/core" "^7.23.9"
 
-"@vanilla-extract/compiler@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/compiler/-/compiler-0.2.1.tgz#540d202575f6e3f1b53f7fa28784cd518ae1043c"
-  integrity sha512-cvEJ4/mAyCqdB8JScOTq7foV2QLw3bOJMLEdvJADscMZrn8pkks+xCxwynAcpzrrL1bFm6/766ZAY1fPXD2O7Q==
+"@vanilla-extract/compiler@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/compiler/-/compiler-0.2.3.tgz#97c4bb989aea92ee8329f1ad0a3ec01bf3aa8479"
+  integrity sha512-SFEDLbvd5rhpjhrLp9BtvvVNHNxWupiUht/yrsHQ7xfkpEn4xg45gbfma7aX9fsOpi82ebqFmowHd/g6jHDQnA==
   dependencies:
-    "@vanilla-extract/css" "^1.17.3"
-    "@vanilla-extract/integration" "^8.0.3"
+    "@vanilla-extract/css" "^1.17.4"
+    "@vanilla-extract/integration" "^8.0.4"
     vite "^5.0.0 || ^6.0.0"
-    vite-node "^3.0.4"
+    vite-node "^3.2.2"
 
-"@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.17.3":
+"@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.17.4":
   version "1.17.4"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.4.tgz#c73353992b8243e8ab140582bf6d673ebc709b0a"
   integrity sha512-m3g9nQDWPtL+sTFdtCGRMI1Vrp86Ay4PBYq1Bo7Bnchj5ElNtAJpOqD+zg+apthVA4fB7oVpMWNjwpa6ElDWFQ==
@@ -762,15 +762,15 @@
     modern-ahocorasick "^1.0.0"
     picocolors "^1.0.0"
 
-"@vanilla-extract/integration@^8.0.3":
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-8.0.3.tgz#d23c9ef76e2585c186e9b1951d50437e5946d31f"
-  integrity sha512-7sCd4kBp/u02iNq3cYBXtOzKyX5muoHylsqcEjyuJWfnxOb1iB/jDCyTsiSRXcByj/wKjgjItbAdm/uzrUlAVw==
+"@vanilla-extract/integration@^8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-8.0.4.tgz#eb176376b3b03c44713bf596cc41d6d97ba9f5d3"
+  integrity sha512-cmOb7tR+g3ulKvFtSbmdw3YUyIS1d7MQqN+FcbwNhdieyno5xzUyfDCMjeWJhmCSMvZ6WlinkrOkgs6SHB+FRg==
   dependencies:
     "@babel/core" "^7.23.9"
     "@babel/plugin-syntax-typescript" "^7.23.3"
-    "@vanilla-extract/babel-plugin-debug-ids" "^1.2.1"
-    "@vanilla-extract/css" "^1.17.3"
+    "@vanilla-extract/babel-plugin-debug-ids" "^1.2.2"
+    "@vanilla-extract/css" "^1.17.4"
     dedent "^1.5.3"
     esbuild "npm:esbuild@>=0.17.6 <0.26.0"
     eval "0.1.8"
@@ -784,12 +784,12 @@
   integrity sha512-gT2jbfZuaaCLrAxwXbRgIhGhcXbRZCG3v4TTUnjw0EJ7ArdBRxkq4msNJkbuRkCgfIK5ATmprB5t9ljvLeFDEA==
 
 "@vanilla-extract/vite-plugin@^5.0.0":
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-5.0.4.tgz#90d69a9b8da4aa7150ad6682febc380d7d851f99"
-  integrity sha512-W+6kOZZF4nt+TF/savpSyU1ijb1GKZ/Su/SA71JMHXJKMvkB4AwibLgZUSbrvSeBQaBCsl+ZtZCqLQHeEXLNqA==
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-5.0.6.tgz#00084be8e872519dde5152d92241ad8ad1e85396"
+  integrity sha512-9dSPIuxR2NULvVk9bqCoTaZz3CtfBrvo5hImWaiWCblWZXzCcD7jIg7Nbcpdz9MvytO+mNta82/qCWj1G9mEMQ==
   dependencies:
-    "@vanilla-extract/compiler" "^0.2.1"
-    "@vanilla-extract/integration" "^8.0.3"
+    "@vanilla-extract/compiler" "^0.2.3"
+    "@vanilla-extract/integration" "^8.0.4"
 
 "@vitejs/plugin-react@^4.2.1":
   version "4.5.1"
@@ -1156,10 +1156,17 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.4, debug@^4.4.0:
+debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.4:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.4.0.tgz#2b3f2aea2ffeb776477460267377dc8710faba8a"
   integrity sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==
+  dependencies:
+    ms "^2.1.3"
+
+debug@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.4.1.tgz#e5a8bc6cbc4c6cd3e64308b0693a3d4fa550189b"
+  integrity sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==
   dependencies:
     ms "^2.1.3"
 
@@ -1234,10 +1241,10 @@ es-errors@^1.3.0:
   resolved "https://registry.yarnpkg.com/es-errors/-/es-errors-1.3.0.tgz#05f75a25dab98e4fb1dcd5e1472c0546d5057c8f"
   integrity sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==
 
-es-module-lexer@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.6.0.tgz#da49f587fd9e68ee2404fe4e256c0c7d3a81be21"
-  integrity sha512-qqnD1yMU6tk/jnaMosogGySTZP8YtUgAffA9nMN+E/rjxcfRQ6IEk7IiozUjgxKoFHBGjTLnrHB/YC45r/59EQ==
+es-module-lexer@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.7.0.tgz#9159601561880a85f2734560a9099b2c31e5372a"
+  integrity sha512-jEQoCwk8hyb2AZziIOLhDqpm5+2ww5uIE6lkO/6jcOCusfk6LhMHpXXfBLXTZ7Ydyt0j4VoUQv6uGNYbdW+kBA==
 
 es-object-atoms@^1.0.0, es-object-atoms@^1.1.1:
   version "1.1.1"
@@ -1862,10 +1869,10 @@ pathe@^1.1.0, pathe@^1.1.2:
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-1.1.2.tgz#6c4cb47a945692e48a1ddd6e4094d170516437ec"
   integrity sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==
 
-pathe@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/pathe/-/pathe-2.0.2.tgz#5ed86644376915b3c7ee4d00ac8c348d671da3a5"
-  integrity sha512-15Ztpk+nov8DR524R4BF7uEuzESgzUEAV4Ah7CUMNGXdE5ELuvxElxGXndBl32vMSsWa1jpNf22Z+Er3sKwq+w==
+pathe@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-2.0.3.tgz#3ecbec55421685b70a9da872b2cff3e1cbed1716"
+  integrity sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==
 
 pend@~1.2.0:
   version "1.2.0"
@@ -2289,23 +2296,23 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite-node@^3.0.4:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/vite-node/-/vite-node-3.0.5.tgz#6a0d06f7a4bdaae6ddcdedc12d910d886cf7d62f"
-  integrity sha512-02JEJl7SbtwSDJdYS537nU6l+ktdvcREfLksk/NDAqtdKWGqHl+joXzEubHROmS3E6pip+Xgu2tFezMu75jH7A==
+vite-node@^3.2.2:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/vite-node/-/vite-node-3.2.3.tgz#1c5a2282fe100114c26fd221daf506e69d392a36"
+  integrity sha512-gc8aAifGuDIpZHrPjuHyP4dpQmYXqWw7D1GmDnWeNWP654UEXzVfQ5IHPSK5HaHkwB/+p1atpYpSdw/2kOv8iQ==
   dependencies:
     cac "^6.7.14"
-    debug "^4.4.0"
-    es-module-lexer "^1.6.0"
-    pathe "^2.0.2"
-    vite "^5.0.0 || ^6.0.0"
+    debug "^4.4.1"
+    es-module-lexer "^1.7.0"
+    pathe "^2.0.3"
+    vite "^5.0.0 || ^6.0.0 || ^7.0.0-0"
 
 vite-plugin-css-injected-by-js@^3.5.0:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/vite-plugin-css-injected-by-js/-/vite-plugin-css-injected-by-js-3.5.2.tgz#1f75d16ad5c05b6b49bf18018099a189ec2e46ad"
   integrity sha512-2MpU/Y+SCZyWUB6ua3HbJCrgnF0KACAsmzOQt1UvRVJCGF6S8xdA3ZUhWcWdM9ivG4I5az8PnQmwwrkC2CAQrQ==
 
-"vite@^5.0.0 || ^6.0.0", vite@^6.1.0:
+"vite@^5.0.0 || ^6.0.0", "vite@^5.0.0 || ^6.0.0 || ^7.0.0-0", vite@^6.1.0:
   version "6.3.5"
   resolved "https://registry.yarnpkg.com/vite/-/vite-6.3.5.tgz#fec73879013c9c0128c8d284504c6d19410d12a3"
   integrity sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==
