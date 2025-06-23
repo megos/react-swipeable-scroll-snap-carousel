@@ -814,9 +814,9 @@
   integrity sha512-gT2jbfZuaaCLrAxwXbRgIhGhcXbRZCG3v4TTUnjw0EJ7ArdBRxkq4msNJkbuRkCgfIK5ATmprB5t9ljvLeFDEA==
 
 "@vanilla-extract/vite-plugin@^5.0.0":
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-5.0.6.tgz#00084be8e872519dde5152d92241ad8ad1e85396"
-  integrity sha512-9dSPIuxR2NULvVk9bqCoTaZz3CtfBrvo5hImWaiWCblWZXzCcD7jIg7Nbcpdz9MvytO+mNta82/qCWj1G9mEMQ==
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-5.0.7.tgz#6d7fc4961e5a044fdc7ac58e7594e4157b433d76"
+  integrity sha512-UyUma9HEl2qHl0CFlTwPKU7SkyuOwNQOgLT1yMShjqiQqg8k+9oma2Z5GigGtEUhUDizCAxeR4b4bP9KAviDdQ==
   dependencies:
     "@vanilla-extract/compiler" "^0.2.3"
     "@vanilla-extract/integration" "^8.0.4"
