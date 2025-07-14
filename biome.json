@@ -6,6 +6,9 @@
       "recommended": true,
       "style": {
         "useImportType": "off"
+      },
+      "a11y": {
+        "noStaticElementInteractions": "off"
       }
     }
   },
@@ -14,9 +17,10 @@
     "indentStyle": "space",
     "indentWidth": 2,
     "lineWidth": 80,
-    "ignore": []
+    "includes": ["**"]
   },
   "javascript": {
+    "jsxRuntime": "reactClassic",
     "formatter": {
       "quoteStyle": "single",
       "semicolons": "asNeeded"
