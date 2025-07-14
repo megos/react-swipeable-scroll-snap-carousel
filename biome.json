@@ -6,6 +6,9 @@
       "recommended": true,
       "style": {
         "useImportType": "off"
+      },
+      "a11y": {
+        "noStaticElementInteractions": "off"
       }
     }
   },
@@ -17,6 +20,7 @@
     "includes": ["**"]
   },
   "javascript": {
+    "jsxRuntime": "reactClassic",
     "formatter": {
       "quoteStyle": "single",
       "semicolons": "asNeeded"
