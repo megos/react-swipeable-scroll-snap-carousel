@@ -891,17 +891,17 @@
   dependencies:
     "@babel/core" "^7.23.9"
 
-"@vanilla-extract/compiler@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/compiler/-/compiler-0.3.2.tgz#28fea2d8ac9c04716feaf295c5cbf19635f4e112"
-  integrity sha512-19lHKUgGPz8FVDj5rGzZEmAMEVe5qxbX4lmFH3iz2vnK3/HSGOHzMQl4DknjyXpo5VbOZBf1z6kePiVd4EwTnA==
+"@vanilla-extract/compiler@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/compiler/-/compiler-0.3.3.tgz#198ff31613ed4c046e9e67e69836cf3b39d5d7fc"
+  integrity sha512-y/RCcjhITi/JV/jbH22QN0aDSTtWELOBbkod/rcrUfGTS8bfVrthSsFmH+0ZoL9LJBx3vHrf0Qaf24xZkoiJoQ==
   dependencies:
-    "@vanilla-extract/css" "^1.17.4"
-    "@vanilla-extract/integration" "^8.0.5"
+    "@vanilla-extract/css" "^1.17.5"
+    "@vanilla-extract/integration" "^8.0.6"
     vite "^5.0.0 || ^6.0.0 || ^7.0.0"
     vite-node "^3.2.2"
 
-"@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.17.4":
+"@vanilla-extract/css@^1.11.0":
   version "1.17.4"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.4.tgz#c73353992b8243e8ab140582bf6d673ebc709b0a"
   integrity sha512-m3g9nQDWPtL+sTFdtCGRMI1Vrp86Ay4PBYq1Bo7Bnchj5ElNtAJpOqD+zg+apthVA4fB7oVpMWNjwpa6ElDWFQ==
@@ -919,15 +919,33 @@
     modern-ahocorasick "^1.0.0"
     picocolors "^1.0.0"
 
-"@vanilla-extract/integration@^8.0.5":
-  version "8.0.5"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-8.0.5.tgz#7e281ee35464603904f66ea26666a68cd3d6fb96"
-  integrity sha512-Lt+HPwN1X4aHHT+Klw5bxvCT9k88ZegQqoLLpPmqIFFdYZeEvqPZAI/mZvtHD0ceoIHuNg6onEYQC5hfO1cBwQ==
+"@vanilla-extract/css@^1.17.5":
+  version "1.17.5"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.5.tgz#3d634e3619d8aaa95cd002b472a132d3beba951d"
+  integrity sha512-u29cUVL5Z2qjJ2Eh8pusT1ToGtTeA4eb/y0ygaw2vWv9XFQSixtkBYEsVkrJExSI/0+SR1g8n5NYas4KlWOdfA==
+  dependencies:
+    "@emotion/hash" "^0.9.0"
+    "@vanilla-extract/private" "^1.0.9"
+    css-what "^6.1.0"
+    cssesc "^3.0.0"
+    csstype "^3.2.3"
+    dedent "^1.5.3"
+    deep-object-diff "^1.1.9"
+    deepmerge "^4.2.2"
+    lru-cache "^10.4.3"
+    media-query-parser "^2.0.2"
+    modern-ahocorasick "^1.0.0"
+    picocolors "^1.0.0"
+
+"@vanilla-extract/integration@^8.0.6":
+  version "8.0.6"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-8.0.6.tgz#d8862953fed02ef99d91b81b839c4a212c9808e5"
+  integrity sha512-BlDtXtb6Fin8XEGwf4BhsJkKQh0rhj/YiN6ylNNOqXtRU0+DQmzE5WGE056ScKg3p5e0IFaeH7PPxuWJca9aXw==
   dependencies:
     "@babel/core" "^7.23.9"
     "@babel/plugin-syntax-typescript" "^7.23.3"
     "@vanilla-extract/babel-plugin-debug-ids" "^1.2.2"
-    "@vanilla-extract/css" "^1.17.4"
+    "@vanilla-extract/css" "^1.17.5"
     dedent "^1.5.3"
     esbuild "npm:esbuild@>=0.17.6 <0.28.0"
     eval "0.1.8"
@@ -941,12 +959,12 @@
   integrity sha512-gT2jbfZuaaCLrAxwXbRgIhGhcXbRZCG3v4TTUnjw0EJ7ArdBRxkq4msNJkbuRkCgfIK5ATmprB5t9ljvLeFDEA==
 
 "@vanilla-extract/vite-plugin@^5.0.0":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-5.1.2.tgz#3a6489ad960a375bb4c9e7db0f958f0a357e064b"
-  integrity sha512-lUanlkLWXerAGxgiFtKRq1smEdAzC3NDKN8b6BKT/Wq0va9uYPxM5QixA6cJ/4+/xdm1Xw8vPgDBHWd0eUIpOw==
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/vite-plugin/-/vite-plugin-5.1.3.tgz#a0c262f9574bd1f6520b1c00ad3092f28eaa0bcf"
+  integrity sha512-QKojhn+O4NIjPQsjfF3Lz+DCC9VaGE/P6eNXcZGoWhdCuGXbMOdSX0xogCX9O6ewzwJOiJJ++3NvuSlh7oVkcw==
   dependencies:
-    "@vanilla-extract/compiler" "^0.3.2"
-    "@vanilla-extract/integration" "^8.0.5"
+    "@vanilla-extract/compiler" "^0.3.3"
+    "@vanilla-extract/integration" "^8.0.6"
 
 "@vitejs/plugin-react@^5.0.0":
   version "5.1.1"
@@ -1230,7 +1248,7 @@ cssesc@^3.0.0:
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
-csstype@^3.0.7, csstype@^3.2.2:
+csstype@^3.0.7, csstype@^3.2.2, csstype@^3.2.3:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.2.3.tgz#ec48c0f3e993e50648c86da559e2610995cf989a"
   integrity sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==
