@@ -907,9 +907,9 @@
     vite-node "^3.2.2"
 
 "@vanilla-extract/css@^1.11.0", "@vanilla-extract/css@^1.17.5":
-  version "1.17.5"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.17.5.tgz#3d634e3619d8aaa95cd002b472a132d3beba951d"
-  integrity sha512-u29cUVL5Z2qjJ2Eh8pusT1ToGtTeA4eb/y0ygaw2vWv9XFQSixtkBYEsVkrJExSI/0+SR1g8n5NYas4KlWOdfA==
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.18.0.tgz#470c81b7df6b9bcdf804897ee0f58c72b5c6d463"
+  integrity sha512-/p0dwOjr0o8gE5BRQ5O9P0u/2DjUd6Zfga2JGmE4KaY7ZITWMszTzk4x4CPlM5cKkRr2ZGzbE6XkuPNfp9shSQ==
   dependencies:
     "@emotion/hash" "^0.9.0"
     "@vanilla-extract/private" "^1.0.9"
