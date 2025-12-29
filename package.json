@@ -31,6 +31,7 @@
     "build": "vite build && tsc -p tsconfig.types.json",
     "preview": "vite preview",
     "lint": "biome check src examples",
+    "lint:ci": "biome ci src examples",
     "format": "biome format src examples --write",
     "build:page": "vite -c vite.config.page.mts build"
   },
