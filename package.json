@@ -36,6 +36,7 @@
     "build:page": "vite -c vite.config.page.mts build"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.1.1",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vanilla-extract/css": "^1.11.0",
@@ -44,7 +45,6 @@
     "cypress": "^15.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "@biomejs/biome": "^2.1.1",
     "typescript": "^5.0.4",
     "vite": "^7.1.2",
     "vite-plugin-css-injected-by-js": "^3.5.0"
@@ -52,5 +52,11 @@
   "peerDependencies": {
     "react": ">=16.8",
     "react-dom": ">=16.8"
-  }
+  },
+  "dependenciesMeta": {
+    "cypress": {
+      "built": true
+    }
+  },
+  "packageManager": "yarn@4.12.0"
 }
