@@ -12,6 +12,7 @@ dist
 dist-ssr
 public
 *.local
+.yarn
 
 # Editor directories and files
 .vscode/*
