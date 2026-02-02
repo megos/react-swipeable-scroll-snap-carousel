@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - run: corepack enable
       - name: Cypress run
-        uses: cypress-io/github-action@8a35f965fbd13e3b18d9fb3bdc5f50ae2f4a5e76 # v7.1.0
+        uses: cypress-io/github-action@0f330ebf0d60f87608ed72f1d6232e5644aa3171 # v7.1.1
         with:
           component: true
           record: true
