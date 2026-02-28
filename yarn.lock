@@ -3524,7 +3524,7 @@ __metadata:
     react-dom: "npm:^19.1.1"
     typescript: "npm:^5.0.4"
     vite: "npm:^7.1.2"
-    vite-plugin-css-injected-by-js: "npm:^3.5.0"
+    vite-plugin-css-injected-by-js: "npm:^4.0.1"
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
@@ -4149,12 +4149,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-css-injected-by-js@npm:^3.5.0":
-  version: 3.5.2
-  resolution: "vite-plugin-css-injected-by-js@npm:3.5.2"
+"vite-plugin-css-injected-by-js@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "vite-plugin-css-injected-by-js@npm:4.0.1"
   peerDependencies:
     vite: ">2.0.0-0"
-  checksum: 10c0/5c6a2434d4f302640a4bfc7695d56cf83eca03a4f89f05820057fedd8a2e788186105942360d19808042872ba0970ed6b1c04cd02337bbe67d8321993a464c04
+  checksum: 10c0/60537d7a730e648d4e101d0ab61692d385526014d25fd5b4b6987a9d640e4f9788740e7e65ec5f8bbc1139bb59205984f9f1bb3bd72250fa1f9bfcabfe94eab5
   languageName: node
   linkType: hard
 
