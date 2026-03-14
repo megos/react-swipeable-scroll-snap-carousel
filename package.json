@@ -46,7 +46,7 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "typescript": "^5.0.4",
-    "vite": "^7.1.2",
+    "vite": "^8.0.0",
     "vite-plugin-css-injected-by-js": "^4.0.1"
   },
   "peerDependencies": {
