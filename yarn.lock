@@ -1589,27 +1589,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:^1.11.0":
-  version: 1.20.0
-  resolution: "@vanilla-extract/css@npm:1.20.0"
-  dependencies:
-    "@emotion/hash": "npm:^0.9.0"
-    "@vanilla-extract/private": "npm:^1.0.9"
-    css-what: "npm:^6.1.0"
-    cssesc: "npm:^3.0.0"
-    csstype: "npm:^3.2.3"
-    dedent: "npm:^1.5.3"
-    deep-object-diff: "npm:^1.1.9"
-    deepmerge: "npm:^4.2.2"
-    lru-cache: "npm:^10.4.3"
-    media-query-parser: "npm:^2.0.2"
-    modern-ahocorasick: "npm:^1.0.0"
-    picocolors: "npm:^1.0.0"
-  checksum: 10c0/65cea310a35653e50b212cd8b10b0dbdf845d724803dcd993296663a0fd57cb2b34fb133af68d91804ed70b269256b7f73d1b22657299dac3bbbf027ad0e48a6
-  languageName: node
-  linkType: hard
-
-"@vanilla-extract/css@npm:^1.19.1, @vanilla-extract/css@npm:^1.20.1":
+"@vanilla-extract/css@npm:^1.11.0, @vanilla-extract/css@npm:^1.19.1, @vanilla-extract/css@npm:^1.20.1":
   version: 1.20.1
   resolution: "@vanilla-extract/css@npm:1.20.1"
   dependencies:
@@ -2093,15 +2073,6 @@ __metadata:
   version: 6.1.0
   resolution: "css-what@npm:6.1.0"
   checksum: 10c0/a09f5a6b14ba8dcf57ae9a59474722e80f20406c53a61e9aedb0eedc693b135113ffe2983f4efc4b5065ae639442e9ae88df24941ef159c218b231011d733746
-  languageName: node
-  linkType: hard
-
-"cssesc@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "cssesc@npm:3.0.0"
-  bin:
-    cssesc: bin/cssesc
-  checksum: 10c0/6bcfd898662671be15ae7827120472c5667afb3d7429f1f917737f3bf84c4176003228131b643ae74543f17a394446247df090c597bb9a728cce298606ed0aa7
   languageName: node
   linkType: hard
 
