@@ -859,15 +859,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/compiler@npm:^0.7.1":
-  version: 0.7.1
-  resolution: "@vanilla-extract/compiler@npm:0.7.1"
+"@vanilla-extract/compiler@npm:^0.7.2":
+  version: 0.7.2
+  resolution: "@vanilla-extract/compiler@npm:0.7.2"
   dependencies:
     "@vanilla-extract/css": "npm:^1.21.1"
     "@vanilla-extract/integration": "npm:^8.0.10"
     vite: "npm:^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0"
     vite-node: "npm:^3.2.2 || ^5.0.0 || ^6.0.0"
-  checksum: 10c0/144484aa619b1f6e3f626a77b32b02a682051b76037af98562be1b67b232c3715e8caeb0aef240306c3a446c1a5b357c8800306c3f7da55b51fcb4208e6d7851
+  checksum: 10c0/abca5c5e51ff518b5e788c6dd87642cb887250990edecfcf1ffa5175acbe02a69eb06dda39d296943f9b7f3a92ade1dfa4c8324f6b08b0ef5b9a550bb9660077
   languageName: node
   linkType: hard
 
@@ -916,14 +916,14 @@ __metadata:
   linkType: hard
 
 "@vanilla-extract/vite-plugin@npm:^5.0.0":
-  version: 5.2.4
-  resolution: "@vanilla-extract/vite-plugin@npm:5.2.4"
+  version: 5.2.5
+  resolution: "@vanilla-extract/vite-plugin@npm:5.2.5"
   dependencies:
-    "@vanilla-extract/compiler": "npm:^0.7.1"
+    "@vanilla-extract/compiler": "npm:^0.7.2"
     "@vanilla-extract/integration": "npm:^8.0.10"
   peerDependencies:
     vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
-  checksum: 10c0/bfbffa702872b49ff5ccb8293165bb1342fabf60a06cf9684ee7169ed9be6ba7cd1fc282806927564670adaef6f4e93b6bf173d4159f5639e4eee54bb8f43c41
+  checksum: 10c0/48fca9fbd5051499e0ba044860c2f167777622f2f046f0a8cc4531c085526383d63ed2ac6aab17d5fecca7ff12812c97529024d6a82e0116fe15095fe684b9c9
   languageName: node
   linkType: hard
 
