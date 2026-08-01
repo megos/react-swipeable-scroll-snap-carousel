@@ -872,8 +872,8 @@ __metadata:
   linkType: hard
 
 "@vanilla-extract/css@npm:^1.11.0, @vanilla-extract/css@npm:^1.20.1, @vanilla-extract/css@npm:^1.21.1":
-  version: 1.21.1
-  resolution: "@vanilla-extract/css@npm:1.21.1"
+  version: 1.21.2
+  resolution: "@vanilla-extract/css@npm:1.21.2"
   dependencies:
     "@emotion/hash": "npm:^0.9.0"
     "@vanilla-extract/private": "npm:^1.0.9"
@@ -886,7 +886,7 @@ __metadata:
     media-query-parser: "npm:^2.0.2"
     modern-ahocorasick: "npm:^1.0.0"
     picocolors: "npm:^1.0.0"
-  checksum: 10c0/b934daa181c0334dbb3fb681f26919488adcf0647f37c90f3b888307f4ac7301c205135f3ca682ad5f2c202ac9cb9f5edb9270b34edbd18c5f28c7b8ad12bae7
+  checksum: 10c0/f504b423a413058996d49fa424b04fa25fb580335a83a0bde732b05cd93c40cd31e29b2c7b9fc8daeaa75efa110b86ef5aa01844849a8deb8d5194047af42d13
   languageName: node
   linkType: hard
 
