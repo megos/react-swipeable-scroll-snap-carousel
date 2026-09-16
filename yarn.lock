@@ -916,14 +916,14 @@ __metadata:
   linkType: hard
 
 "@vanilla-extract/vite-plugin@npm:^5.0.0":
-  version: 5.2.5
-  resolution: "@vanilla-extract/vite-plugin@npm:5.2.5"
+  version: 5.2.6
+  resolution: "@vanilla-extract/vite-plugin@npm:5.2.6"
   dependencies:
     "@vanilla-extract/compiler": "npm:^0.7.2"
     "@vanilla-extract/integration": "npm:^8.0.10"
   peerDependencies:
     vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
-  checksum: 10c0/48fca9fbd5051499e0ba044860c2f167777622f2f046f0a8cc4531c085526383d63ed2ac6aab17d5fecca7ff12812c97529024d6a82e0116fe15095fe684b9c9
+  checksum: 10c0/2d54967ecc628a87a932dd6319a3214b8c034f8e91e7f9771a68ddecabd214371580a34c11b30a9af267e10b84228f32b5c1383115ccf1c03202f0dfb4d03722
   languageName: node
   linkType: hard
 
