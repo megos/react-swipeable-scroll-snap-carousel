@@ -14,7 +14,7 @@ jobs:
           persist-credentials: false
       - run: corepack enable
       - name: Cypress run
-        uses: cypress-io/github-action@09090944bd8aaa2a517cefb6e38bf1aae336b42b # v7.4.3
+        uses: cypress-io/github-action@c541a95ea92d9239347a2355f2e895cd4b3f8060 # v7.4.6
         with:
           component: true
           record: true
