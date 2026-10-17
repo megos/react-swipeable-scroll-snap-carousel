@@ -819,8 +819,8 @@ __metadata:
   linkType: hard
 
 "@vanilla-extract/css@npm:^1.11.0, @vanilla-extract/css@npm:^1.20.1, @vanilla-extract/css@npm:^1.21.1":
-  version: 1.21.2
-  resolution: "@vanilla-extract/css@npm:1.21.2"
+  version: 1.21.3
+  resolution: "@vanilla-extract/css@npm:1.21.3"
   dependencies:
     "@emotion/hash": "npm:^0.9.0"
     "@vanilla-extract/private": "npm:^1.0.9"
@@ -828,12 +828,12 @@ __metadata:
     csstype: "npm:^3.2.3"
     dedent: "npm:^1.5.3"
     deep-object-diff: "npm:^1.1.9"
-    deepmerge: "npm:^4.2.2"
+    deepmerge-ts: "npm:^8.0.2"
     lru-cache: "npm:^10.4.3"
     media-query-parser: "npm:^2.0.2"
-    modern-ahocorasick: "npm:^1.0.0"
+    modern-ahocorasick: "npm:^3.3.0"
     picocolors: "npm:^1.0.0"
-  checksum: 10c0/f504b423a413058996d49fa424b04fa25fb580335a83a0bde732b05cd93c40cd31e29b2c7b9fc8daeaa75efa110b86ef5aa01844849a8deb8d5194047af42d13
+  checksum: 10c0/c934a19a085c56d6a23dfff35d2056ec3515133ae9cc7f55140faf7757d5b0e2d44fa2888e51b17e25fb6be942f5c68c797defb4ea40bddd063fa948b1797792
   languageName: node
   linkType: hard
 
@@ -1439,10 +1439,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deepmerge@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "deepmerge@npm:4.2.2"
-  checksum: 10c0/d6136eee869057fea7a829aa2d10073ed49db5216e42a77cc737dd385334aab9b68dae22020a00c24c073d5f79cbbdd3f11b8d4fc87700d112ddaa0e1f968ef2
+"deepmerge-ts@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "deepmerge-ts@npm:8.0.2"
+  checksum: 10c0/2be1628a305b8621e4e1abec9ec397aba9745d3c50da714a12e1ac60dc3eb32ee4ea8e1be4c240baf18bbc26f6c6c3e75a4492cfa74cebef70321e5a4ad4f1c2
   languageName: node
   linkType: hard
 
@@ -2619,10 +2619,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"modern-ahocorasick@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "modern-ahocorasick@npm:1.0.1"
-  checksum: 10c0/90ef4516ba8eef136d0cd4949faacdadee02217b8e25deda2881054ca8fcc32b985ef159b6e794c40e11c51040303c8e2975b20b23b86ec8a2a63516bbf93add
+"modern-ahocorasick@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "modern-ahocorasick@npm:3.3.0"
+  checksum: 10c0/1264d625bc4dc476695067a63a111d34108fd7265343783346925b3614b192b0b1ec598c5021269514d533398086ced648d41bc9c0fc32d7268ec42b429f9b59
   languageName: node
   linkType: hard
 
